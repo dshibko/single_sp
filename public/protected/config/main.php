@@ -15,7 +15,10 @@ return array(
 	// autoloading model and component classes
 	'import'=>array(
 		'application.models.*',
+        'application.models.Entities.*',
+        'application.models.Forms.*',
 		'application.components.*',
+        'application.controllers.*',
 	),
 
 	'modules'=>array(
@@ -43,7 +46,8 @@ return array(
             'showScriptName'=>false,
 			'rules'=>array(
                 '<action:\w+>' => 'site/<action>',
-                '<action:\w+>/add' => 'site/add<action>',
+                '<action:\w+>/<do:(add)>' => 'site/<action>',
+                '<action:\w+>/<do:(edit)>/<id:\d+>' => 'site/<action>',
 			),
 		),
 
@@ -65,7 +69,7 @@ return array(
 					'class'=>'CFileLogRoute',
 					'levels'=>'error, warning',
 				),
-				// uncomment the following to show log messages on web pages
+				// uncomment the following to show log messages on web forms
 				/*
 				array(
 					'class'=>'CWebLogRoute',

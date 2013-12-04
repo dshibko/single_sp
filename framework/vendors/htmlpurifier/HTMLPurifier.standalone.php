@@ -9486,7 +9486,7 @@ class HTMLPurifier_AttrDef_CSS_FontFamily extends HTMLPurifier_AttrDef
             //    most parsers give little thought to Unicode, treatment
             //    of these codepoints is basically uniform, even for
             //    punctuation-like codepoints.  These characters can
-            //    show up in non-Western pages and are supported by most
+            //    show up in non-Western forms and are supported by most
             //    major browsers, for example: "ＭＳ 明朝" is a
             //    legitimate font-name
             //    <http://ja.wikipedia.org/wiki/MS_明朝>.  See

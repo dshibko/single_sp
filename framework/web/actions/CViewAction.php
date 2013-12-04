@@ -48,14 +48,14 @@ class CViewAction extends CAction
 	 */
 	public $view;
 	/**
-	 * @var string the base path for the views. Defaults to 'pages'.
+	 * @var string the base path for the views. Defaults to 'forms'.
 	 * The base path will be prefixed to any user-specified page view.
 	 * For example, if a user requests for <code>tutorial.chap1</code>, the corresponding view name will
-	 * be <code>pages/tutorial/chap1</code>, assuming the base path is <code>pages</code>.
+	 * be <code>forms/tutorial/chap1</code>, assuming the base path is <code>forms</code>.
 	 * The actual view file is determined by {@link CController::getViewFile}.
 	 * @see CController::getViewFile
 	 */
-	public $basePath='pages';
+	public $basePath='forms';
 	/**
 	 * @var mixed the name of the layout to be applied to the views.
 	 * This will be assigned to {@link CController::layout} before the view is rendered.

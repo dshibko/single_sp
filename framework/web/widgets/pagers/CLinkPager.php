@@ -9,7 +9,7 @@
  */
 
 /**
- * CLinkPager displays a list of hyperlinks that lead to different pages of target.
+ * CLinkPager displays a list of hyperlinks that lead to different forms of target.
  *
  * @author Qiang Xue <qiang.xue@gmail.com>
  * @package system.web.widgets.pagers
@@ -158,7 +158,7 @@ class CLinkPager extends CBasePager
 			$page=0;
 		$buttons[]=$this->createPageButton($this->prevPageLabel,$page,$this->previousPageCssClass,$currentPage<=0,false);
 
-		// internal pages
+		// internal forms
 		for($i=$beginPage;$i<=$endPage;++$i)
 			$buttons[]=$this->createPageButton($i+1,$i,$this->internalPageCssClass,false,$i==$currentPage);
 
@@ -191,7 +191,7 @@ class CLinkPager extends CBasePager
 	}
 
 	/**
-	 * @return array the begin and end pages that need to be displayed.
+	 * @return array the begin and end forms that need to be displayed.
 	 */
 	protected function getPageRange()
 	{

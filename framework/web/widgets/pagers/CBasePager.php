@@ -13,10 +13,10 @@
  *
  * It provides the calculation of page count and maintains the current page.
  *
- * @property CPagination $pages The pagination information.
+ * @property CPagination $forms The pagination information.
  * @property integer $pageSize Number of items in each page.
  * @property integer $itemCount Total number of items.
- * @property integer $pageCount Number of pages.
+ * @property integer $pageCount Number of forms.
  * @property integer $currentPage The zero-based index of the current page. Defaults to 0.
  *
  * @author Qiang Xue <qiang.xue@gmail.com>
@@ -94,7 +94,7 @@ abstract class CBasePager extends CWidget
 	}
 
 	/**
-	 * @return integer number of pages
+	 * @return integer number of forms
 	 * @see CPagination::getPageCount
 	 */
 	public function getPageCount()

@@ -11,7 +11,7 @@
 /**
  * CPagination represents information relevant to pagination.
  *
- * When data needs to be rendered in multiple pages, we can use CPagination to
+ * When data needs to be rendered in multiple forms, we can use CPagination to
  * represent information such as {@link getItemCount total item count},
  * {@link getPageSize page size}, {@link getCurrentPage current page}, etc.
  * These information can be passed to {@link CBasePager pagers} to render
@@ -24,16 +24,16 @@
  * function actionIndex(){
  *     $criteria=new CDbCriteria();
  *     $count=Article::model()->count($criteria);
- *     $pages=new CPagination($count);
+ *     $forms=new CPagination($count);
  *
  *     // results per page
- *     $pages->pageSize=10;
- *     $pages->applyLimit($criteria);
+ *     $forms->pageSize=10;
+ *     $forms->applyLimit($criteria);
  *     $models=Article::model()->findAll($criteria);
  *
  *     $this->render('index', array(
  *     'models' => $models,
- *          'pages' => $pages
+ *          'forms' => $forms
  *     ));
  * }
  * </pre>
@@ -46,13 +46,13 @@
  *
  * // display pagination
  * <?php $this->widget('CLinkPager', array(
- *     'pages' => $pages,
+ *     'forms' => $forms,
  * )) ?>
  * </pre>
  *
  * @property integer $pageSize Number of items in each page. Defaults to 10.
  * @property integer $itemCount Total number of items. Defaults to 0.
- * @property integer $pageCount Number of pages.
+ * @property integer $pageCount Number of forms.
  * @property integer $currentPage The zero-based index of the current page. Defaults to 0.
  * @property integer $offset The offset of the data. This may be used to set the
  * OFFSET value for a SQL statement for fetching the current page of data.
@@ -144,7 +144,7 @@ class CPagination extends CComponent
 	}
 
 	/**
-	 * @return integer number of pages
+	 * @return integer number of forms
 	 */
 	public function getPageCount()
 	{

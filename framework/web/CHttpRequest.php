@@ -72,7 +72,7 @@ class CHttpRequest extends CApplicationComponent
 	 * from the same application. If not, a 400 HTTP exception will be raised.
 	 * Note, this feature requires that the user client accepts cookie.
 	 * You also need to use {@link CHtml::form} or {@link CHtml::statefulForm} to generate
-	 * the needed HTML forms in your pages.
+	 * the needed HTML forms in your forms.
 	 * @see http://seclab.stanford.edu/websec/csrf/csrf.pdf
 	 */
 	public $enableCsrfValidation=false;

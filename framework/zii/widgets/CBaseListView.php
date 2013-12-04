@@ -68,7 +68,7 @@ abstract class CBaseListView extends CWidget
 	 *   <li>{end}: the ending row number (1-based) currently being displayed</li>
 	 *   <li>{count}: the total number of rows</li>
 	 *   <li>{page}: the page number (1-based) current being displayed, available since version 1.1.3</li>
-	 *   <li>{pages}: the total number of pages, available since version 1.1.3</li>
+	 *   <li>{forms}: the total number of forms, available since version 1.1.3</li>
 	 * </ul>
 	 */
 	public $summaryText;
@@ -224,7 +224,7 @@ abstract class CBaseListView extends CWidget
 				'{end}'=>$end,
 				'{count}'=>$total,
 				'{page}'=>$pagination->currentPage+1,
-				'{pages}'=>$pagination->pageCount,
+				'{forms}'=>$pagination->pageCount,
 			));
 		}
 		else
@@ -236,7 +236,7 @@ abstract class CBaseListView extends CWidget
 				'{start}'=>1,
 				'{end}'=>$count,
 				'{page}'=>1,
-				'{pages}'=>1,
+				'{forms}'=>1,
 			));
 		}
 		echo '</div>';
@@ -263,9 +263,9 @@ abstract class CBaseListView extends CWidget
 				unset($pager['class']);
 			}
 		}
-		$pager['pages']=$this->dataProvider->getPagination();
+		$pager['forms']=$this->dataProvider->getPagination();
 
-		if($pager['pages']->getPageCount()>1)
+		if($pager['forms']->getPageCount()>1)
 		{
 			echo '<div class="'.$this->pagerCssClass.'">';
 			$this->widget($class,$pager);

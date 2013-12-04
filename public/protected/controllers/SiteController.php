@@ -13,7 +13,7 @@ class SiteController extends Controller
 				'class'=>'CCaptchaAction',
 				'backColor'=>0xFFFFFF,
 			),
-			// page action renders "static" pages stored under 'protected/views/site/pages'
+			// page action renders "static" forms stored under 'protected/views/site/forms'
 			// They can be accessed via: index.php?r=site/page&view=FileName
 			'page'=>array(
 				'class'=>'CViewAction',
@@ -26,27 +26,58 @@ class SiteController extends Controller
 	 * when an action is not explicitly requested by users.
 	 */
 	public function actionIndex()
-	{$this->render('index');
-		//$this->redirect('projects');
+	{
+		$this->redirect('projects');
 	}
 
-    public function actionProjects()
+    public function actionProjects($do = false, $id = false)
     {
-        $projectsModel = Projects::model();
+        if (empty($do)) {
+            $projectsModel = new Projects();
+            $projects = $projectsModel->with('appClub')->findAll();
 
-        $projects = $projectsModel->findAll();
-        $this->render('index', array('projects' => $projects));
+            return $this->render('projects', array('projects' => $projects));
+        } else {
+            if (!empty($id) && (int)$id == 0) {
+                return $this->redirect('/projects');
+            }
+            switch ($do) {
+                case 'add':
+                case 'edit':
+                    $post = Yii::app()->request->getPost('projects');
+                    $form = $this->editProject($id, $post);
+                    return $this->render('projectsEdit', array('form' => $form));
+                    break;
+                default:
+                    return $this->redirect('/projects');
+                    break;
+            }
+        }
     }
 
-    public function actionAddProjects()
+    protected function editProject($id = false, $post = false)
     {
+        $projectsForm = new ProjectsForm();
         $projectsModel = new Projects();
-$projectsModel->setAttribute('project_url', $_POST['url']);
-        $projectsModel->setAttribute('app_club', 8);
-        //print_r($projectsModel);die();
-        $projectsModel->insert();
-        $projects = $projectsModel->findAll();
-        $this->render('index', array('projects' => $projects));
+
+        if (!empty($post)) {
+            $projectsForm->attributes = $post;
+            if ($projectsForm->validate()) {
+                $project = !empty($id) ? $projectsModel->findByPk($id) : $projectsModel;
+                $project->attributes = $post;
+                if ($project->save(true)) {
+                    return $this->redirect('/projects');
+                }
+            }
+        } else {
+            $project = !empty($id) ? $projectsModel->findByPk($id) : $projectsModel;
+            if (!empty($project)) {
+                $projectsForm->attributes = $project->attributes;
+            }
+        }
+        $form = new CForm($projectsForm->getElements(), $projectsForm);
+
+        return $form;
     }
 
 	/**

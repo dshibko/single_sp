@@ -905,7 +905,7 @@ class CController extends CBaseController
 	 * Renders dynamic content returned by the specified callback.
 	 * This method is used together with {@link COutputCache}. Dynamic contents
 	 * will always show as their latest state even if the content surrounding them is being cached.
-	 * This is especially useful when caching pages that are mostly static but contain some small
+	 * This is especially useful when caching forms that are mostly static but contain some small
 	 * dynamic regions, such as username or current time.
 	 * We can use this method to render these dynamic regions to ensure they are always up-to-date.
 	 *

@@ -67,7 +67,7 @@ class CErrorHandler extends CApplicationComponent
 	public $maxTraceSourceLines = 10;
 
 	/**
-	 * @var string the application administrator information (could be a name or email link). It is displayed in error pages to end users. Defaults to 'the webmaster'.
+	 * @var string the application administrator information (could be a name or email link). It is displayed in error forms to end users. Defaults to 'the webmaster'.
 	 */
 	public $adminInfo='the webmaster';
 	/**

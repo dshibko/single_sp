@@ -51,7 +51,7 @@ class CClientScript extends CApplicationComponent
 	 * If an array key is '*.js' or '*.css', the corresponding URL will replace all
 	 * JavaScript files or CSS files, respectively.
 	 *
-	 * This property is mainly used to optimize the generated HTML pages
+	 * This property is mainly used to optimize the generated HTML forms
 	 * by merging different scripts files into fewer and optimized script files.
 	 */
 	public $scriptMap=array();
