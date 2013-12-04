@@ -1,0 +1,1293 @@
+2013/12/03 15:01:02 [error] [exception.CException] exception 'CException' with message 'Property "LoginForm.username" is not defined.' in /home/dmitryshibko/public_html/sp-admin.loc/framework/base/CComponent.php:130
+Stack trace:
+#0 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/helpers/CHtml.php(2529): CComponent->__get('username')
+#1 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/helpers/CHtml.php(2252): CHtml::resolveValue(Object(LoginForm), 'username')
+#2 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/helpers/CHtml.php(1434): CHtml::activeInputField('text', Object(LoginForm), 'username', Array)
+#3 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/widgets/CActiveForm.php(725): CHtml::activeTextField(Object(LoginForm), 'username', Array)
+#4 /home/dmitryshibko/public_html/sp-admin.loc/public/protected/views/site/login.php(29): CActiveForm->textField(Object(LoginForm), 'username')
+#5 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CBaseController.php(126): require('/home/dmitryshi...')
+#6 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/dmitryshi...', Array, true)
+#7 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(869): CBaseController->renderFile('/home/dmitryshi...', Array, true)
+#8 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(782): CController->renderPartial('login', Array, true)
+#9 /home/dmitryshibko/public_html/sp-admin.loc/public/protected/controllers/SiteController.php(98): CController->render('login', Array)
+#10 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/actions/CInlineAction.php(49): SiteController->actionLogin()
+#11 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#12 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#13 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php(282): CController->run('login')
+#15 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#16 /home/dmitryshibko/public_html/sp-admin.loc/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#17 /home/dmitryshibko/public_html/sp-admin.loc/public/index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/index.php?r=site/login
+HTTP_REFERER=http://sp-admin.loc/
+---
+2013/12/03 15:01:20 [error] [exception.CException] exception 'CException' with message 'Property "LoginForm.username" is not defined.' in /home/dmitryshibko/public_html/sp-admin.loc/framework/base/CComponent.php:130
+Stack trace:
+#0 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/helpers/CHtml.php(2529): CComponent->__get('username')
+#1 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/helpers/CHtml.php(2252): CHtml::resolveValue(Object(LoginForm), 'username')
+#2 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/helpers/CHtml.php(1434): CHtml::activeInputField('text', Object(LoginForm), 'username', Array)
+#3 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/widgets/CActiveForm.php(725): CHtml::activeTextField(Object(LoginForm), 'username', Array)
+#4 /home/dmitryshibko/public_html/sp-admin.loc/public/protected/views/site/login.php(29): CActiveForm->textField(Object(LoginForm), 'username')
+#5 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CBaseController.php(126): require('/home/dmitryshi...')
+#6 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/dmitryshi...', Array, true)
+#7 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(869): CBaseController->renderFile('/home/dmitryshi...', Array, true)
+#8 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(782): CController->renderPartial('login', Array, true)
+#9 /home/dmitryshibko/public_html/sp-admin.loc/public/protected/controllers/SiteController.php(98): CController->render('login', Array)
+#10 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/actions/CInlineAction.php(49): SiteController->actionLogin()
+#11 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#12 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#13 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php(282): CController->run('login')
+#15 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#16 /home/dmitryshibko/public_html/sp-admin.loc/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#17 /home/dmitryshibko/public_html/sp-admin.loc/public/index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/index.php?r=site/login
+HTTP_REFERER=http://sp-admin.loc/
+---
+2013/12/03 15:01:21 [error] [exception.CException] exception 'CException' with message 'Property "LoginForm.username" is not defined.' in /home/dmitryshibko/public_html/sp-admin.loc/framework/base/CComponent.php:130
+Stack trace:
+#0 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/helpers/CHtml.php(2529): CComponent->__get('username')
+#1 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/helpers/CHtml.php(2252): CHtml::resolveValue(Object(LoginForm), 'username')
+#2 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/helpers/CHtml.php(1434): CHtml::activeInputField('text', Object(LoginForm), 'username', Array)
+#3 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/widgets/CActiveForm.php(725): CHtml::activeTextField(Object(LoginForm), 'username', Array)
+#4 /home/dmitryshibko/public_html/sp-admin.loc/public/protected/views/site/login.php(29): CActiveForm->textField(Object(LoginForm), 'username')
+#5 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CBaseController.php(126): require('/home/dmitryshi...')
+#6 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/dmitryshi...', Array, true)
+#7 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(869): CBaseController->renderFile('/home/dmitryshi...', Array, true)
+#8 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(782): CController->renderPartial('login', Array, true)
+#9 /home/dmitryshibko/public_html/sp-admin.loc/public/protected/controllers/SiteController.php(98): CController->render('login', Array)
+#10 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/actions/CInlineAction.php(49): SiteController->actionLogin()
+#11 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#12 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#13 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php(282): CController->run('login')
+#15 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#16 /home/dmitryshibko/public_html/sp-admin.loc/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#17 /home/dmitryshibko/public_html/sp-admin.loc/public/index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/index.php?r=site/login
+HTTP_REFERER=http://sp-admin.loc/
+---
+2013/12/03 15:01:21 [error] [exception.CException] exception 'CException' with message 'Property "LoginForm.username" is not defined.' in /home/dmitryshibko/public_html/sp-admin.loc/framework/base/CComponent.php:130
+Stack trace:
+#0 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/helpers/CHtml.php(2529): CComponent->__get('username')
+#1 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/helpers/CHtml.php(2252): CHtml::resolveValue(Object(LoginForm), 'username')
+#2 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/helpers/CHtml.php(1434): CHtml::activeInputField('text', Object(LoginForm), 'username', Array)
+#3 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/widgets/CActiveForm.php(725): CHtml::activeTextField(Object(LoginForm), 'username', Array)
+#4 /home/dmitryshibko/public_html/sp-admin.loc/public/protected/views/site/login.php(29): CActiveForm->textField(Object(LoginForm), 'username')
+#5 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CBaseController.php(126): require('/home/dmitryshi...')
+#6 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/dmitryshi...', Array, true)
+#7 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(869): CBaseController->renderFile('/home/dmitryshi...', Array, true)
+#8 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(782): CController->renderPartial('login', Array, true)
+#9 /home/dmitryshibko/public_html/sp-admin.loc/public/protected/controllers/SiteController.php(98): CController->render('login', Array)
+#10 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/actions/CInlineAction.php(49): SiteController->actionLogin()
+#11 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#12 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#13 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php(282): CController->run('login')
+#15 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#16 /home/dmitryshibko/public_html/sp-admin.loc/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#17 /home/dmitryshibko/public_html/sp-admin.loc/public/index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/index.php?r=site/login
+HTTP_REFERER=http://sp-admin.loc/
+---
+2013/12/03 15:01:21 [error] [exception.CException] exception 'CException' with message 'Property "LoginForm.username" is not defined.' in /home/dmitryshibko/public_html/sp-admin.loc/framework/base/CComponent.php:130
+Stack trace:
+#0 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/helpers/CHtml.php(2529): CComponent->__get('username')
+#1 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/helpers/CHtml.php(2252): CHtml::resolveValue(Object(LoginForm), 'username')
+#2 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/helpers/CHtml.php(1434): CHtml::activeInputField('text', Object(LoginForm), 'username', Array)
+#3 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/widgets/CActiveForm.php(725): CHtml::activeTextField(Object(LoginForm), 'username', Array)
+#4 /home/dmitryshibko/public_html/sp-admin.loc/public/protected/views/site/login.php(29): CActiveForm->textField(Object(LoginForm), 'username')
+#5 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CBaseController.php(126): require('/home/dmitryshi...')
+#6 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/dmitryshi...', Array, true)
+#7 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(869): CBaseController->renderFile('/home/dmitryshi...', Array, true)
+#8 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(782): CController->renderPartial('login', Array, true)
+#9 /home/dmitryshibko/public_html/sp-admin.loc/public/protected/controllers/SiteController.php(98): CController->render('login', Array)
+#10 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/actions/CInlineAction.php(49): SiteController->actionLogin()
+#11 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#12 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#13 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php(282): CController->run('login')
+#15 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#16 /home/dmitryshibko/public_html/sp-admin.loc/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#17 /home/dmitryshibko/public_html/sp-admin.loc/public/index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/index.php?r=site/login
+HTTP_REFERER=http://sp-admin.loc/
+---
+2013/12/03 15:01:21 [error] [exception.CException] exception 'CException' with message 'Property "LoginForm.username" is not defined.' in /home/dmitryshibko/public_html/sp-admin.loc/framework/base/CComponent.php:130
+Stack trace:
+#0 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/helpers/CHtml.php(2529): CComponent->__get('username')
+#1 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/helpers/CHtml.php(2252): CHtml::resolveValue(Object(LoginForm), 'username')
+#2 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/helpers/CHtml.php(1434): CHtml::activeInputField('text', Object(LoginForm), 'username', Array)
+#3 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/widgets/CActiveForm.php(725): CHtml::activeTextField(Object(LoginForm), 'username', Array)
+#4 /home/dmitryshibko/public_html/sp-admin.loc/public/protected/views/site/login.php(29): CActiveForm->textField(Object(LoginForm), 'username')
+#5 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CBaseController.php(126): require('/home/dmitryshi...')
+#6 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/dmitryshi...', Array, true)
+#7 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(869): CBaseController->renderFile('/home/dmitryshi...', Array, true)
+#8 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(782): CController->renderPartial('login', Array, true)
+#9 /home/dmitryshibko/public_html/sp-admin.loc/public/protected/controllers/SiteController.php(98): CController->render('login', Array)
+#10 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/actions/CInlineAction.php(49): SiteController->actionLogin()
+#11 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#12 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#13 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php(282): CController->run('login')
+#15 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#16 /home/dmitryshibko/public_html/sp-admin.loc/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#17 /home/dmitryshibko/public_html/sp-admin.loc/public/index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/index.php?r=site/login
+HTTP_REFERER=http://sp-admin.loc/
+---
+2013/12/03 15:01:49 [error] [exception.CException] exception 'CException' with message 'Property "LoginForm.username" is not defined.' in /home/dmitryshibko/public_html/sp-admin.loc/framework/base/CComponent.php:130
+Stack trace:
+#0 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/helpers/CHtml.php(2529): CComponent->__get('username')
+#1 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/helpers/CHtml.php(2252): CHtml::resolveValue(Object(LoginForm), 'username')
+#2 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/helpers/CHtml.php(1434): CHtml::activeInputField('text', Object(LoginForm), 'username', Array)
+#3 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/widgets/CActiveForm.php(725): CHtml::activeTextField(Object(LoginForm), 'username', Array)
+#4 /home/dmitryshibko/public_html/sp-admin.loc/public/protected/views/site/login.php(29): CActiveForm->textField(Object(LoginForm), 'username')
+#5 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CBaseController.php(126): require('/home/dmitryshi...')
+#6 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/dmitryshi...', Array, true)
+#7 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(869): CBaseController->renderFile('/home/dmitryshi...', Array, true)
+#8 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(782): CController->renderPartial('login', Array, true)
+#9 /home/dmitryshibko/public_html/sp-admin.loc/public/protected/controllers/SiteController.php(98): CController->render('login', Array)
+#10 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/actions/CInlineAction.php(49): SiteController->actionLogin()
+#11 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#12 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#13 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php(282): CController->run('login')
+#15 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#16 /home/dmitryshibko/public_html/sp-admin.loc/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#17 /home/dmitryshibko/public_html/sp-admin.loc/public/index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/index.php?r=site/login
+HTTP_REFERER=http://sp-admin.loc/
+---
+2013/12/03 15:01:49 [error] [exception.CException] exception 'CException' with message 'Property "LoginForm.username" is not defined.' in /home/dmitryshibko/public_html/sp-admin.loc/framework/base/CComponent.php:130
+Stack trace:
+#0 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/helpers/CHtml.php(2529): CComponent->__get('username')
+#1 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/helpers/CHtml.php(2252): CHtml::resolveValue(Object(LoginForm), 'username')
+#2 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/helpers/CHtml.php(1434): CHtml::activeInputField('text', Object(LoginForm), 'username', Array)
+#3 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/widgets/CActiveForm.php(725): CHtml::activeTextField(Object(LoginForm), 'username', Array)
+#4 /home/dmitryshibko/public_html/sp-admin.loc/public/protected/views/site/login.php(29): CActiveForm->textField(Object(LoginForm), 'username')
+#5 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CBaseController.php(126): require('/home/dmitryshi...')
+#6 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/dmitryshi...', Array, true)
+#7 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(869): CBaseController->renderFile('/home/dmitryshi...', Array, true)
+#8 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(782): CController->renderPartial('login', Array, true)
+#9 /home/dmitryshibko/public_html/sp-admin.loc/public/protected/controllers/SiteController.php(98): CController->render('login', Array)
+#10 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/actions/CInlineAction.php(49): SiteController->actionLogin()
+#11 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#12 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#13 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php(282): CController->run('login')
+#15 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#16 /home/dmitryshibko/public_html/sp-admin.loc/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#17 /home/dmitryshibko/public_html/sp-admin.loc/public/index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/index.php?r=site/login
+HTTP_REFERER=http://sp-admin.loc/
+---
+2013/12/03 15:01:49 [error] [exception.CException] exception 'CException' with message 'Property "LoginForm.username" is not defined.' in /home/dmitryshibko/public_html/sp-admin.loc/framework/base/CComponent.php:130
+Stack trace:
+#0 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/helpers/CHtml.php(2529): CComponent->__get('username')
+#1 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/helpers/CHtml.php(2252): CHtml::resolveValue(Object(LoginForm), 'username')
+#2 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/helpers/CHtml.php(1434): CHtml::activeInputField('text', Object(LoginForm), 'username', Array)
+#3 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/widgets/CActiveForm.php(725): CHtml::activeTextField(Object(LoginForm), 'username', Array)
+#4 /home/dmitryshibko/public_html/sp-admin.loc/public/protected/views/site/login.php(29): CActiveForm->textField(Object(LoginForm), 'username')
+#5 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CBaseController.php(126): require('/home/dmitryshi...')
+#6 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/dmitryshi...', Array, true)
+#7 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(869): CBaseController->renderFile('/home/dmitryshi...', Array, true)
+#8 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(782): CController->renderPartial('login', Array, true)
+#9 /home/dmitryshibko/public_html/sp-admin.loc/public/protected/controllers/SiteController.php(98): CController->render('login', Array)
+#10 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/actions/CInlineAction.php(49): SiteController->actionLogin()
+#11 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#12 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#13 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php(282): CController->run('login')
+#15 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#16 /home/dmitryshibko/public_html/sp-admin.loc/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#17 /home/dmitryshibko/public_html/sp-admin.loc/public/index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/index.php?r=site/login
+HTTP_REFERER=http://sp-admin.loc/
+---
+2013/12/03 15:01:50 [error] [exception.CException] exception 'CException' with message 'Property "LoginForm.username" is not defined.' in /home/dmitryshibko/public_html/sp-admin.loc/framework/base/CComponent.php:130
+Stack trace:
+#0 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/helpers/CHtml.php(2529): CComponent->__get('username')
+#1 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/helpers/CHtml.php(2252): CHtml::resolveValue(Object(LoginForm), 'username')
+#2 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/helpers/CHtml.php(1434): CHtml::activeInputField('text', Object(LoginForm), 'username', Array)
+#3 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/widgets/CActiveForm.php(725): CHtml::activeTextField(Object(LoginForm), 'username', Array)
+#4 /home/dmitryshibko/public_html/sp-admin.loc/public/protected/views/site/login.php(29): CActiveForm->textField(Object(LoginForm), 'username')
+#5 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CBaseController.php(126): require('/home/dmitryshi...')
+#6 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/dmitryshi...', Array, true)
+#7 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(869): CBaseController->renderFile('/home/dmitryshi...', Array, true)
+#8 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(782): CController->renderPartial('login', Array, true)
+#9 /home/dmitryshibko/public_html/sp-admin.loc/public/protected/controllers/SiteController.php(98): CController->render('login', Array)
+#10 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/actions/CInlineAction.php(49): SiteController->actionLogin()
+#11 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#12 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#13 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php(282): CController->run('login')
+#15 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#16 /home/dmitryshibko/public_html/sp-admin.loc/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#17 /home/dmitryshibko/public_html/sp-admin.loc/public/index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/index.php?r=site/login
+HTTP_REFERER=http://sp-admin.loc/
+---
+2013/12/03 15:01:50 [error] [exception.CException] exception 'CException' with message 'Property "LoginForm.username" is not defined.' in /home/dmitryshibko/public_html/sp-admin.loc/framework/base/CComponent.php:130
+Stack trace:
+#0 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/helpers/CHtml.php(2529): CComponent->__get('username')
+#1 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/helpers/CHtml.php(2252): CHtml::resolveValue(Object(LoginForm), 'username')
+#2 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/helpers/CHtml.php(1434): CHtml::activeInputField('text', Object(LoginForm), 'username', Array)
+#3 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/widgets/CActiveForm.php(725): CHtml::activeTextField(Object(LoginForm), 'username', Array)
+#4 /home/dmitryshibko/public_html/sp-admin.loc/public/protected/views/site/login.php(29): CActiveForm->textField(Object(LoginForm), 'username')
+#5 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CBaseController.php(126): require('/home/dmitryshi...')
+#6 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/dmitryshi...', Array, true)
+#7 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(869): CBaseController->renderFile('/home/dmitryshi...', Array, true)
+#8 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(782): CController->renderPartial('login', Array, true)
+#9 /home/dmitryshibko/public_html/sp-admin.loc/public/protected/controllers/SiteController.php(98): CController->render('login', Array)
+#10 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/actions/CInlineAction.php(49): SiteController->actionLogin()
+#11 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#12 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#13 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php(282): CController->run('login')
+#15 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#16 /home/dmitryshibko/public_html/sp-admin.loc/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#17 /home/dmitryshibko/public_html/sp-admin.loc/public/index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/index.php?r=site/login
+HTTP_REFERER=http://sp-admin.loc/
+---
+2013/12/03 15:01:50 [error] [exception.CException] exception 'CException' with message 'Property "LoginForm.username" is not defined.' in /home/dmitryshibko/public_html/sp-admin.loc/framework/base/CComponent.php:130
+Stack trace:
+#0 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/helpers/CHtml.php(2529): CComponent->__get('username')
+#1 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/helpers/CHtml.php(2252): CHtml::resolveValue(Object(LoginForm), 'username')
+#2 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/helpers/CHtml.php(1434): CHtml::activeInputField('text', Object(LoginForm), 'username', Array)
+#3 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/widgets/CActiveForm.php(725): CHtml::activeTextField(Object(LoginForm), 'username', Array)
+#4 /home/dmitryshibko/public_html/sp-admin.loc/public/protected/views/site/login.php(29): CActiveForm->textField(Object(LoginForm), 'username')
+#5 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CBaseController.php(126): require('/home/dmitryshi...')
+#6 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/dmitryshi...', Array, true)
+#7 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(869): CBaseController->renderFile('/home/dmitryshi...', Array, true)
+#8 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(782): CController->renderPartial('login', Array, true)
+#9 /home/dmitryshibko/public_html/sp-admin.loc/public/protected/controllers/SiteController.php(98): CController->render('login', Array)
+#10 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/actions/CInlineAction.php(49): SiteController->actionLogin()
+#11 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#12 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#13 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php(282): CController->run('login')
+#15 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#16 /home/dmitryshibko/public_html/sp-admin.loc/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#17 /home/dmitryshibko/public_html/sp-admin.loc/public/index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/index.php?r=site/login
+HTTP_REFERER=http://sp-admin.loc/
+---
+2013/12/03 15:01:50 [error] [exception.CException] exception 'CException' with message 'Property "LoginForm.username" is not defined.' in /home/dmitryshibko/public_html/sp-admin.loc/framework/base/CComponent.php:130
+Stack trace:
+#0 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/helpers/CHtml.php(2529): CComponent->__get('username')
+#1 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/helpers/CHtml.php(2252): CHtml::resolveValue(Object(LoginForm), 'username')
+#2 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/helpers/CHtml.php(1434): CHtml::activeInputField('text', Object(LoginForm), 'username', Array)
+#3 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/widgets/CActiveForm.php(725): CHtml::activeTextField(Object(LoginForm), 'username', Array)
+#4 /home/dmitryshibko/public_html/sp-admin.loc/public/protected/views/site/login.php(29): CActiveForm->textField(Object(LoginForm), 'username')
+#5 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CBaseController.php(126): require('/home/dmitryshi...')
+#6 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/dmitryshi...', Array, true)
+#7 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(869): CBaseController->renderFile('/home/dmitryshi...', Array, true)
+#8 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(782): CController->renderPartial('login', Array, true)
+#9 /home/dmitryshibko/public_html/sp-admin.loc/public/protected/controllers/SiteController.php(98): CController->render('login', Array)
+#10 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/actions/CInlineAction.php(49): SiteController->actionLogin()
+#11 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#12 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#13 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php(282): CController->run('login')
+#15 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#16 /home/dmitryshibko/public_html/sp-admin.loc/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#17 /home/dmitryshibko/public_html/sp-admin.loc/public/index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/index.php?r=site/login
+HTTP_REFERER=http://sp-admin.loc/
+---
+2013/12/03 15:01:50 [error] [exception.CException] exception 'CException' with message 'Property "LoginForm.username" is not defined.' in /home/dmitryshibko/public_html/sp-admin.loc/framework/base/CComponent.php:130
+Stack trace:
+#0 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/helpers/CHtml.php(2529): CComponent->__get('username')
+#1 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/helpers/CHtml.php(2252): CHtml::resolveValue(Object(LoginForm), 'username')
+#2 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/helpers/CHtml.php(1434): CHtml::activeInputField('text', Object(LoginForm), 'username', Array)
+#3 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/widgets/CActiveForm.php(725): CHtml::activeTextField(Object(LoginForm), 'username', Array)
+#4 /home/dmitryshibko/public_html/sp-admin.loc/public/protected/views/site/login.php(29): CActiveForm->textField(Object(LoginForm), 'username')
+#5 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CBaseController.php(126): require('/home/dmitryshi...')
+#6 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/dmitryshi...', Array, true)
+#7 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(869): CBaseController->renderFile('/home/dmitryshi...', Array, true)
+#8 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(782): CController->renderPartial('login', Array, true)
+#9 /home/dmitryshibko/public_html/sp-admin.loc/public/protected/controllers/SiteController.php(98): CController->render('login', Array)
+#10 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/actions/CInlineAction.php(49): SiteController->actionLogin()
+#11 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#12 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#13 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php(282): CController->run('login')
+#15 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#16 /home/dmitryshibko/public_html/sp-admin.loc/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#17 /home/dmitryshibko/public_html/sp-admin.loc/public/index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/index.php?r=site/login
+HTTP_REFERER=http://sp-admin.loc/
+---
+2013/12/03 15:01:50 [error] [exception.CException] exception 'CException' with message 'Property "LoginForm.username" is not defined.' in /home/dmitryshibko/public_html/sp-admin.loc/framework/base/CComponent.php:130
+Stack trace:
+#0 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/helpers/CHtml.php(2529): CComponent->__get('username')
+#1 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/helpers/CHtml.php(2252): CHtml::resolveValue(Object(LoginForm), 'username')
+#2 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/helpers/CHtml.php(1434): CHtml::activeInputField('text', Object(LoginForm), 'username', Array)
+#3 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/widgets/CActiveForm.php(725): CHtml::activeTextField(Object(LoginForm), 'username', Array)
+#4 /home/dmitryshibko/public_html/sp-admin.loc/public/protected/views/site/login.php(29): CActiveForm->textField(Object(LoginForm), 'username')
+#5 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CBaseController.php(126): require('/home/dmitryshi...')
+#6 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/dmitryshi...', Array, true)
+#7 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(869): CBaseController->renderFile('/home/dmitryshi...', Array, true)
+#8 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(782): CController->renderPartial('login', Array, true)
+#9 /home/dmitryshibko/public_html/sp-admin.loc/public/protected/controllers/SiteController.php(98): CController->render('login', Array)
+#10 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/actions/CInlineAction.php(49): SiteController->actionLogin()
+#11 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#12 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#13 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php(282): CController->run('login')
+#15 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#16 /home/dmitryshibko/public_html/sp-admin.loc/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#17 /home/dmitryshibko/public_html/sp-admin.loc/public/index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/index.php?r=site/login
+HTTP_REFERER=http://sp-admin.loc/
+---
+2013/12/03 15:01:50 [error] [exception.CException] exception 'CException' with message 'Property "LoginForm.username" is not defined.' in /home/dmitryshibko/public_html/sp-admin.loc/framework/base/CComponent.php:130
+Stack trace:
+#0 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/helpers/CHtml.php(2529): CComponent->__get('username')
+#1 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/helpers/CHtml.php(2252): CHtml::resolveValue(Object(LoginForm), 'username')
+#2 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/helpers/CHtml.php(1434): CHtml::activeInputField('text', Object(LoginForm), 'username', Array)
+#3 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/widgets/CActiveForm.php(725): CHtml::activeTextField(Object(LoginForm), 'username', Array)
+#4 /home/dmitryshibko/public_html/sp-admin.loc/public/protected/views/site/login.php(29): CActiveForm->textField(Object(LoginForm), 'username')
+#5 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CBaseController.php(126): require('/home/dmitryshi...')
+#6 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/dmitryshi...', Array, true)
+#7 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(869): CBaseController->renderFile('/home/dmitryshi...', Array, true)
+#8 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(782): CController->renderPartial('login', Array, true)
+#9 /home/dmitryshibko/public_html/sp-admin.loc/public/protected/controllers/SiteController.php(98): CController->render('login', Array)
+#10 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/actions/CInlineAction.php(49): SiteController->actionLogin()
+#11 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#12 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#13 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php(282): CController->run('login')
+#15 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#16 /home/dmitryshibko/public_html/sp-admin.loc/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#17 /home/dmitryshibko/public_html/sp-admin.loc/public/index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/index.php?r=site/login
+HTTP_REFERER=http://sp-admin.loc/
+---
+2013/12/03 15:01:50 [error] [exception.CException] exception 'CException' with message 'Property "LoginForm.username" is not defined.' in /home/dmitryshibko/public_html/sp-admin.loc/framework/base/CComponent.php:130
+Stack trace:
+#0 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/helpers/CHtml.php(2529): CComponent->__get('username')
+#1 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/helpers/CHtml.php(2252): CHtml::resolveValue(Object(LoginForm), 'username')
+#2 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/helpers/CHtml.php(1434): CHtml::activeInputField('text', Object(LoginForm), 'username', Array)
+#3 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/widgets/CActiveForm.php(725): CHtml::activeTextField(Object(LoginForm), 'username', Array)
+#4 /home/dmitryshibko/public_html/sp-admin.loc/public/protected/views/site/login.php(29): CActiveForm->textField(Object(LoginForm), 'username')
+#5 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CBaseController.php(126): require('/home/dmitryshi...')
+#6 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/dmitryshi...', Array, true)
+#7 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(869): CBaseController->renderFile('/home/dmitryshi...', Array, true)
+#8 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(782): CController->renderPartial('login', Array, true)
+#9 /home/dmitryshibko/public_html/sp-admin.loc/public/protected/controllers/SiteController.php(98): CController->render('login', Array)
+#10 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/actions/CInlineAction.php(49): SiteController->actionLogin()
+#11 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#12 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#13 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php(282): CController->run('login')
+#15 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#16 /home/dmitryshibko/public_html/sp-admin.loc/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#17 /home/dmitryshibko/public_html/sp-admin.loc/public/index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/index.php?r=site/login
+HTTP_REFERER=http://sp-admin.loc/
+---
+2013/12/03 15:01:50 [error] [exception.CException] exception 'CException' with message 'Property "LoginForm.username" is not defined.' in /home/dmitryshibko/public_html/sp-admin.loc/framework/base/CComponent.php:130
+Stack trace:
+#0 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/helpers/CHtml.php(2529): CComponent->__get('username')
+#1 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/helpers/CHtml.php(2252): CHtml::resolveValue(Object(LoginForm), 'username')
+#2 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/helpers/CHtml.php(1434): CHtml::activeInputField('text', Object(LoginForm), 'username', Array)
+#3 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/widgets/CActiveForm.php(725): CHtml::activeTextField(Object(LoginForm), 'username', Array)
+#4 /home/dmitryshibko/public_html/sp-admin.loc/public/protected/views/site/login.php(29): CActiveForm->textField(Object(LoginForm), 'username')
+#5 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CBaseController.php(126): require('/home/dmitryshi...')
+#6 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/dmitryshi...', Array, true)
+#7 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(869): CBaseController->renderFile('/home/dmitryshi...', Array, true)
+#8 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(782): CController->renderPartial('login', Array, true)
+#9 /home/dmitryshibko/public_html/sp-admin.loc/public/protected/controllers/SiteController.php(98): CController->render('login', Array)
+#10 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/actions/CInlineAction.php(49): SiteController->actionLogin()
+#11 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#12 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#13 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php(282): CController->run('login')
+#15 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#16 /home/dmitryshibko/public_html/sp-admin.loc/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#17 /home/dmitryshibko/public_html/sp-admin.loc/public/index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/index.php?r=site/login
+HTTP_REFERER=http://sp-admin.loc/
+---
+2013/12/03 15:01:51 [error] [exception.CException] exception 'CException' with message 'Property "LoginForm.username" is not defined.' in /home/dmitryshibko/public_html/sp-admin.loc/framework/base/CComponent.php:130
+Stack trace:
+#0 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/helpers/CHtml.php(2529): CComponent->__get('username')
+#1 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/helpers/CHtml.php(2252): CHtml::resolveValue(Object(LoginForm), 'username')
+#2 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/helpers/CHtml.php(1434): CHtml::activeInputField('text', Object(LoginForm), 'username', Array)
+#3 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/widgets/CActiveForm.php(725): CHtml::activeTextField(Object(LoginForm), 'username', Array)
+#4 /home/dmitryshibko/public_html/sp-admin.loc/public/protected/views/site/login.php(29): CActiveForm->textField(Object(LoginForm), 'username')
+#5 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CBaseController.php(126): require('/home/dmitryshi...')
+#6 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/dmitryshi...', Array, true)
+#7 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(869): CBaseController->renderFile('/home/dmitryshi...', Array, true)
+#8 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(782): CController->renderPartial('login', Array, true)
+#9 /home/dmitryshibko/public_html/sp-admin.loc/public/protected/controllers/SiteController.php(98): CController->render('login', Array)
+#10 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/actions/CInlineAction.php(49): SiteController->actionLogin()
+#11 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#12 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#13 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php(282): CController->run('login')
+#15 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#16 /home/dmitryshibko/public_html/sp-admin.loc/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#17 /home/dmitryshibko/public_html/sp-admin.loc/public/index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/index.php?r=site/login
+HTTP_REFERER=http://sp-admin.loc/
+---
+2013/12/03 15:01:51 [error] [exception.CException] exception 'CException' with message 'Property "LoginForm.username" is not defined.' in /home/dmitryshibko/public_html/sp-admin.loc/framework/base/CComponent.php:130
+Stack trace:
+#0 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/helpers/CHtml.php(2529): CComponent->__get('username')
+#1 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/helpers/CHtml.php(2252): CHtml::resolveValue(Object(LoginForm), 'username')
+#2 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/helpers/CHtml.php(1434): CHtml::activeInputField('text', Object(LoginForm), 'username', Array)
+#3 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/widgets/CActiveForm.php(725): CHtml::activeTextField(Object(LoginForm), 'username', Array)
+#4 /home/dmitryshibko/public_html/sp-admin.loc/public/protected/views/site/login.php(29): CActiveForm->textField(Object(LoginForm), 'username')
+#5 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CBaseController.php(126): require('/home/dmitryshi...')
+#6 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/dmitryshi...', Array, true)
+#7 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(869): CBaseController->renderFile('/home/dmitryshi...', Array, true)
+#8 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(782): CController->renderPartial('login', Array, true)
+#9 /home/dmitryshibko/public_html/sp-admin.loc/public/protected/controllers/SiteController.php(98): CController->render('login', Array)
+#10 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/actions/CInlineAction.php(49): SiteController->actionLogin()
+#11 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#12 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#13 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php(282): CController->run('login')
+#15 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#16 /home/dmitryshibko/public_html/sp-admin.loc/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#17 /home/dmitryshibko/public_html/sp-admin.loc/public/index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/index.php?r=site/login
+HTTP_REFERER=http://sp-admin.loc/
+---
+2013/12/03 15:01:51 [error] [exception.CException] exception 'CException' with message 'Property "LoginForm.username" is not defined.' in /home/dmitryshibko/public_html/sp-admin.loc/framework/base/CComponent.php:130
+Stack trace:
+#0 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/helpers/CHtml.php(2529): CComponent->__get('username')
+#1 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/helpers/CHtml.php(2252): CHtml::resolveValue(Object(LoginForm), 'username')
+#2 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/helpers/CHtml.php(1434): CHtml::activeInputField('text', Object(LoginForm), 'username', Array)
+#3 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/widgets/CActiveForm.php(725): CHtml::activeTextField(Object(LoginForm), 'username', Array)
+#4 /home/dmitryshibko/public_html/sp-admin.loc/public/protected/views/site/login.php(29): CActiveForm->textField(Object(LoginForm), 'username')
+#5 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CBaseController.php(126): require('/home/dmitryshi...')
+#6 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/dmitryshi...', Array, true)
+#7 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(869): CBaseController->renderFile('/home/dmitryshi...', Array, true)
+#8 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(782): CController->renderPartial('login', Array, true)
+#9 /home/dmitryshibko/public_html/sp-admin.loc/public/protected/controllers/SiteController.php(98): CController->render('login', Array)
+#10 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/actions/CInlineAction.php(49): SiteController->actionLogin()
+#11 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#12 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#13 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php(282): CController->run('login')
+#15 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#16 /home/dmitryshibko/public_html/sp-admin.loc/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#17 /home/dmitryshibko/public_html/sp-admin.loc/public/index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/index.php?r=site/login
+HTTP_REFERER=http://sp-admin.loc/
+---
+2013/12/03 15:01:51 [error] [exception.CException] exception 'CException' with message 'Property "LoginForm.username" is not defined.' in /home/dmitryshibko/public_html/sp-admin.loc/framework/base/CComponent.php:130
+Stack trace:
+#0 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/helpers/CHtml.php(2529): CComponent->__get('username')
+#1 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/helpers/CHtml.php(2252): CHtml::resolveValue(Object(LoginForm), 'username')
+#2 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/helpers/CHtml.php(1434): CHtml::activeInputField('text', Object(LoginForm), 'username', Array)
+#3 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/widgets/CActiveForm.php(725): CHtml::activeTextField(Object(LoginForm), 'username', Array)
+#4 /home/dmitryshibko/public_html/sp-admin.loc/public/protected/views/site/login.php(29): CActiveForm->textField(Object(LoginForm), 'username')
+#5 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CBaseController.php(126): require('/home/dmitryshi...')
+#6 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/dmitryshi...', Array, true)
+#7 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(869): CBaseController->renderFile('/home/dmitryshi...', Array, true)
+#8 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(782): CController->renderPartial('login', Array, true)
+#9 /home/dmitryshibko/public_html/sp-admin.loc/public/protected/controllers/SiteController.php(98): CController->render('login', Array)
+#10 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/actions/CInlineAction.php(49): SiteController->actionLogin()
+#11 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#12 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#13 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php(282): CController->run('login')
+#15 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#16 /home/dmitryshibko/public_html/sp-admin.loc/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#17 /home/dmitryshibko/public_html/sp-admin.loc/public/index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/index.php?r=site/login
+HTTP_REFERER=http://sp-admin.loc/
+---
+2013/12/03 15:01:51 [error] [exception.CException] exception 'CException' with message 'Property "LoginForm.username" is not defined.' in /home/dmitryshibko/public_html/sp-admin.loc/framework/base/CComponent.php:130
+Stack trace:
+#0 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/helpers/CHtml.php(2529): CComponent->__get('username')
+#1 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/helpers/CHtml.php(2252): CHtml::resolveValue(Object(LoginForm), 'username')
+#2 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/helpers/CHtml.php(1434): CHtml::activeInputField('text', Object(LoginForm), 'username', Array)
+#3 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/widgets/CActiveForm.php(725): CHtml::activeTextField(Object(LoginForm), 'username', Array)
+#4 /home/dmitryshibko/public_html/sp-admin.loc/public/protected/views/site/login.php(29): CActiveForm->textField(Object(LoginForm), 'username')
+#5 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CBaseController.php(126): require('/home/dmitryshi...')
+#6 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/dmitryshi...', Array, true)
+#7 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(869): CBaseController->renderFile('/home/dmitryshi...', Array, true)
+#8 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(782): CController->renderPartial('login', Array, true)
+#9 /home/dmitryshibko/public_html/sp-admin.loc/public/protected/controllers/SiteController.php(98): CController->render('login', Array)
+#10 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/actions/CInlineAction.php(49): SiteController->actionLogin()
+#11 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#12 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#13 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php(282): CController->run('login')
+#15 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#16 /home/dmitryshibko/public_html/sp-admin.loc/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#17 /home/dmitryshibko/public_html/sp-admin.loc/public/index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/index.php?r=site/login
+HTTP_REFERER=http://sp-admin.loc/
+---
+2013/12/03 15:01:51 [error] [exception.CException] exception 'CException' with message 'Property "LoginForm.username" is not defined.' in /home/dmitryshibko/public_html/sp-admin.loc/framework/base/CComponent.php:130
+Stack trace:
+#0 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/helpers/CHtml.php(2529): CComponent->__get('username')
+#1 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/helpers/CHtml.php(2252): CHtml::resolveValue(Object(LoginForm), 'username')
+#2 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/helpers/CHtml.php(1434): CHtml::activeInputField('text', Object(LoginForm), 'username', Array)
+#3 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/widgets/CActiveForm.php(725): CHtml::activeTextField(Object(LoginForm), 'username', Array)
+#4 /home/dmitryshibko/public_html/sp-admin.loc/public/protected/views/site/login.php(29): CActiveForm->textField(Object(LoginForm), 'username')
+#5 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CBaseController.php(126): require('/home/dmitryshi...')
+#6 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/dmitryshi...', Array, true)
+#7 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(869): CBaseController->renderFile('/home/dmitryshi...', Array, true)
+#8 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(782): CController->renderPartial('login', Array, true)
+#9 /home/dmitryshibko/public_html/sp-admin.loc/public/protected/controllers/SiteController.php(98): CController->render('login', Array)
+#10 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/actions/CInlineAction.php(49): SiteController->actionLogin()
+#11 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#12 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#13 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php(282): CController->run('login')
+#15 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#16 /home/dmitryshibko/public_html/sp-admin.loc/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#17 /home/dmitryshibko/public_html/sp-admin.loc/public/index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/index.php?r=site/login
+HTTP_REFERER=http://sp-admin.loc/
+---
+2013/12/03 15:01:51 [error] [exception.CException] exception 'CException' with message 'Property "LoginForm.username" is not defined.' in /home/dmitryshibko/public_html/sp-admin.loc/framework/base/CComponent.php:130
+Stack trace:
+#0 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/helpers/CHtml.php(2529): CComponent->__get('username')
+#1 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/helpers/CHtml.php(2252): CHtml::resolveValue(Object(LoginForm), 'username')
+#2 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/helpers/CHtml.php(1434): CHtml::activeInputField('text', Object(LoginForm), 'username', Array)
+#3 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/widgets/CActiveForm.php(725): CHtml::activeTextField(Object(LoginForm), 'username', Array)
+#4 /home/dmitryshibko/public_html/sp-admin.loc/public/protected/views/site/login.php(29): CActiveForm->textField(Object(LoginForm), 'username')
+#5 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CBaseController.php(126): require('/home/dmitryshi...')
+#6 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/dmitryshi...', Array, true)
+#7 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(869): CBaseController->renderFile('/home/dmitryshi...', Array, true)
+#8 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(782): CController->renderPartial('login', Array, true)
+#9 /home/dmitryshibko/public_html/sp-admin.loc/public/protected/controllers/SiteController.php(98): CController->render('login', Array)
+#10 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/actions/CInlineAction.php(49): SiteController->actionLogin()
+#11 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#12 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#13 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php(282): CController->run('login')
+#15 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#16 /home/dmitryshibko/public_html/sp-admin.loc/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#17 /home/dmitryshibko/public_html/sp-admin.loc/public/index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/index.php?r=site/login
+HTTP_REFERER=http://sp-admin.loc/
+---
+2013/12/03 15:01:51 [error] [exception.CException] exception 'CException' with message 'Property "LoginForm.username" is not defined.' in /home/dmitryshibko/public_html/sp-admin.loc/framework/base/CComponent.php:130
+Stack trace:
+#0 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/helpers/CHtml.php(2529): CComponent->__get('username')
+#1 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/helpers/CHtml.php(2252): CHtml::resolveValue(Object(LoginForm), 'username')
+#2 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/helpers/CHtml.php(1434): CHtml::activeInputField('text', Object(LoginForm), 'username', Array)
+#3 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/widgets/CActiveForm.php(725): CHtml::activeTextField(Object(LoginForm), 'username', Array)
+#4 /home/dmitryshibko/public_html/sp-admin.loc/public/protected/views/site/login.php(29): CActiveForm->textField(Object(LoginForm), 'username')
+#5 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CBaseController.php(126): require('/home/dmitryshi...')
+#6 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/dmitryshi...', Array, true)
+#7 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(869): CBaseController->renderFile('/home/dmitryshi...', Array, true)
+#8 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(782): CController->renderPartial('login', Array, true)
+#9 /home/dmitryshibko/public_html/sp-admin.loc/public/protected/controllers/SiteController.php(98): CController->render('login', Array)
+#10 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/actions/CInlineAction.php(49): SiteController->actionLogin()
+#11 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#12 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#13 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php(282): CController->run('login')
+#15 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#16 /home/dmitryshibko/public_html/sp-admin.loc/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#17 /home/dmitryshibko/public_html/sp-admin.loc/public/index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/index.php?r=site/login
+HTTP_REFERER=http://sp-admin.loc/
+---
+2013/12/03 15:01:51 [error] [exception.CException] exception 'CException' with message 'Property "LoginForm.username" is not defined.' in /home/dmitryshibko/public_html/sp-admin.loc/framework/base/CComponent.php:130
+Stack trace:
+#0 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/helpers/CHtml.php(2529): CComponent->__get('username')
+#1 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/helpers/CHtml.php(2252): CHtml::resolveValue(Object(LoginForm), 'username')
+#2 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/helpers/CHtml.php(1434): CHtml::activeInputField('text', Object(LoginForm), 'username', Array)
+#3 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/widgets/CActiveForm.php(725): CHtml::activeTextField(Object(LoginForm), 'username', Array)
+#4 /home/dmitryshibko/public_html/sp-admin.loc/public/protected/views/site/login.php(29): CActiveForm->textField(Object(LoginForm), 'username')
+#5 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CBaseController.php(126): require('/home/dmitryshi...')
+#6 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/dmitryshi...', Array, true)
+#7 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(869): CBaseController->renderFile('/home/dmitryshi...', Array, true)
+#8 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(782): CController->renderPartial('login', Array, true)
+#9 /home/dmitryshibko/public_html/sp-admin.loc/public/protected/controllers/SiteController.php(98): CController->render('login', Array)
+#10 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/actions/CInlineAction.php(49): SiteController->actionLogin()
+#11 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#12 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#13 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php(282): CController->run('login')
+#15 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#16 /home/dmitryshibko/public_html/sp-admin.loc/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#17 /home/dmitryshibko/public_html/sp-admin.loc/public/index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/index.php?r=site/login
+HTTP_REFERER=http://sp-admin.loc/
+---
+2013/12/03 15:01:51 [error] [exception.CException] exception 'CException' with message 'Property "LoginForm.username" is not defined.' in /home/dmitryshibko/public_html/sp-admin.loc/framework/base/CComponent.php:130
+Stack trace:
+#0 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/helpers/CHtml.php(2529): CComponent->__get('username')
+#1 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/helpers/CHtml.php(2252): CHtml::resolveValue(Object(LoginForm), 'username')
+#2 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/helpers/CHtml.php(1434): CHtml::activeInputField('text', Object(LoginForm), 'username', Array)
+#3 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/widgets/CActiveForm.php(725): CHtml::activeTextField(Object(LoginForm), 'username', Array)
+#4 /home/dmitryshibko/public_html/sp-admin.loc/public/protected/views/site/login.php(29): CActiveForm->textField(Object(LoginForm), 'username')
+#5 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CBaseController.php(126): require('/home/dmitryshi...')
+#6 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/dmitryshi...', Array, true)
+#7 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(869): CBaseController->renderFile('/home/dmitryshi...', Array, true)
+#8 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(782): CController->renderPartial('login', Array, true)
+#9 /home/dmitryshibko/public_html/sp-admin.loc/public/protected/controllers/SiteController.php(98): CController->render('login', Array)
+#10 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/actions/CInlineAction.php(49): SiteController->actionLogin()
+#11 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#12 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#13 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php(282): CController->run('login')
+#15 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#16 /home/dmitryshibko/public_html/sp-admin.loc/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#17 /home/dmitryshibko/public_html/sp-admin.loc/public/index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/index.php?r=site/login
+HTTP_REFERER=http://sp-admin.loc/
+---
+2013/12/03 15:01:51 [error] [exception.CException] exception 'CException' with message 'Property "LoginForm.username" is not defined.' in /home/dmitryshibko/public_html/sp-admin.loc/framework/base/CComponent.php:130
+Stack trace:
+#0 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/helpers/CHtml.php(2529): CComponent->__get('username')
+#1 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/helpers/CHtml.php(2252): CHtml::resolveValue(Object(LoginForm), 'username')
+#2 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/helpers/CHtml.php(1434): CHtml::activeInputField('text', Object(LoginForm), 'username', Array)
+#3 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/widgets/CActiveForm.php(725): CHtml::activeTextField(Object(LoginForm), 'username', Array)
+#4 /home/dmitryshibko/public_html/sp-admin.loc/public/protected/views/site/login.php(29): CActiveForm->textField(Object(LoginForm), 'username')
+#5 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CBaseController.php(126): require('/home/dmitryshi...')
+#6 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/dmitryshi...', Array, true)
+#7 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(869): CBaseController->renderFile('/home/dmitryshi...', Array, true)
+#8 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(782): CController->renderPartial('login', Array, true)
+#9 /home/dmitryshibko/public_html/sp-admin.loc/public/protected/controllers/SiteController.php(98): CController->render('login', Array)
+#10 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/actions/CInlineAction.php(49): SiteController->actionLogin()
+#11 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#12 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#13 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php(282): CController->run('login')
+#15 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#16 /home/dmitryshibko/public_html/sp-admin.loc/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#17 /home/dmitryshibko/public_html/sp-admin.loc/public/index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/index.php?r=site/login
+HTTP_REFERER=http://sp-admin.loc/
+---
+2013/12/03 15:01:51 [error] [exception.CException] exception 'CException' with message 'Property "LoginForm.username" is not defined.' in /home/dmitryshibko/public_html/sp-admin.loc/framework/base/CComponent.php:130
+Stack trace:
+#0 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/helpers/CHtml.php(2529): CComponent->__get('username')
+#1 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/helpers/CHtml.php(2252): CHtml::resolveValue(Object(LoginForm), 'username')
+#2 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/helpers/CHtml.php(1434): CHtml::activeInputField('text', Object(LoginForm), 'username', Array)
+#3 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/widgets/CActiveForm.php(725): CHtml::activeTextField(Object(LoginForm), 'username', Array)
+#4 /home/dmitryshibko/public_html/sp-admin.loc/public/protected/views/site/login.php(29): CActiveForm->textField(Object(LoginForm), 'username')
+#5 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CBaseController.php(126): require('/home/dmitryshi...')
+#6 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/dmitryshi...', Array, true)
+#7 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(869): CBaseController->renderFile('/home/dmitryshi...', Array, true)
+#8 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(782): CController->renderPartial('login', Array, true)
+#9 /home/dmitryshibko/public_html/sp-admin.loc/public/protected/controllers/SiteController.php(98): CController->render('login', Array)
+#10 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/actions/CInlineAction.php(49): SiteController->actionLogin()
+#11 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#12 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#13 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php(282): CController->run('login')
+#15 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#16 /home/dmitryshibko/public_html/sp-admin.loc/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#17 /home/dmitryshibko/public_html/sp-admin.loc/public/index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/index.php?r=site/login
+HTTP_REFERER=http://sp-admin.loc/
+---
+2013/12/03 15:01:51 [error] [exception.CException] exception 'CException' with message 'Property "LoginForm.username" is not defined.' in /home/dmitryshibko/public_html/sp-admin.loc/framework/base/CComponent.php:130
+Stack trace:
+#0 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/helpers/CHtml.php(2529): CComponent->__get('username')
+#1 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/helpers/CHtml.php(2252): CHtml::resolveValue(Object(LoginForm), 'username')
+#2 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/helpers/CHtml.php(1434): CHtml::activeInputField('text', Object(LoginForm), 'username', Array)
+#3 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/widgets/CActiveForm.php(725): CHtml::activeTextField(Object(LoginForm), 'username', Array)
+#4 /home/dmitryshibko/public_html/sp-admin.loc/public/protected/views/site/login.php(29): CActiveForm->textField(Object(LoginForm), 'username')
+#5 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CBaseController.php(126): require('/home/dmitryshi...')
+#6 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/dmitryshi...', Array, true)
+#7 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(869): CBaseController->renderFile('/home/dmitryshi...', Array, true)
+#8 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(782): CController->renderPartial('login', Array, true)
+#9 /home/dmitryshibko/public_html/sp-admin.loc/public/protected/controllers/SiteController.php(98): CController->render('login', Array)
+#10 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/actions/CInlineAction.php(49): SiteController->actionLogin()
+#11 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#12 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#13 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php(282): CController->run('login')
+#15 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#16 /home/dmitryshibko/public_html/sp-admin.loc/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#17 /home/dmitryshibko/public_html/sp-admin.loc/public/index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/index.php?r=site/login
+HTTP_REFERER=http://sp-admin.loc/
+---
+2013/12/03 15:01:51 [error] [exception.CException] exception 'CException' with message 'Property "LoginForm.username" is not defined.' in /home/dmitryshibko/public_html/sp-admin.loc/framework/base/CComponent.php:130
+Stack trace:
+#0 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/helpers/CHtml.php(2529): CComponent->__get('username')
+#1 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/helpers/CHtml.php(2252): CHtml::resolveValue(Object(LoginForm), 'username')
+#2 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/helpers/CHtml.php(1434): CHtml::activeInputField('text', Object(LoginForm), 'username', Array)
+#3 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/widgets/CActiveForm.php(725): CHtml::activeTextField(Object(LoginForm), 'username', Array)
+#4 /home/dmitryshibko/public_html/sp-admin.loc/public/protected/views/site/login.php(29): CActiveForm->textField(Object(LoginForm), 'username')
+#5 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CBaseController.php(126): require('/home/dmitryshi...')
+#6 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/dmitryshi...', Array, true)
+#7 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(869): CBaseController->renderFile('/home/dmitryshi...', Array, true)
+#8 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(782): CController->renderPartial('login', Array, true)
+#9 /home/dmitryshibko/public_html/sp-admin.loc/public/protected/controllers/SiteController.php(98): CController->render('login', Array)
+#10 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/actions/CInlineAction.php(49): SiteController->actionLogin()
+#11 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#12 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#13 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php(282): CController->run('login')
+#15 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#16 /home/dmitryshibko/public_html/sp-admin.loc/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#17 /home/dmitryshibko/public_html/sp-admin.loc/public/index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/index.php?r=site/login
+HTTP_REFERER=http://sp-admin.loc/
+---
+2013/12/03 15:01:51 [error] [exception.CException] exception 'CException' with message 'Property "LoginForm.username" is not defined.' in /home/dmitryshibko/public_html/sp-admin.loc/framework/base/CComponent.php:130
+Stack trace:
+#0 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/helpers/CHtml.php(2529): CComponent->__get('username')
+#1 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/helpers/CHtml.php(2252): CHtml::resolveValue(Object(LoginForm), 'username')
+#2 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/helpers/CHtml.php(1434): CHtml::activeInputField('text', Object(LoginForm), 'username', Array)
+#3 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/widgets/CActiveForm.php(725): CHtml::activeTextField(Object(LoginForm), 'username', Array)
+#4 /home/dmitryshibko/public_html/sp-admin.loc/public/protected/views/site/login.php(29): CActiveForm->textField(Object(LoginForm), 'username')
+#5 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CBaseController.php(126): require('/home/dmitryshi...')
+#6 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/dmitryshi...', Array, true)
+#7 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(869): CBaseController->renderFile('/home/dmitryshi...', Array, true)
+#8 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(782): CController->renderPartial('login', Array, true)
+#9 /home/dmitryshibko/public_html/sp-admin.loc/public/protected/controllers/SiteController.php(98): CController->render('login', Array)
+#10 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/actions/CInlineAction.php(49): SiteController->actionLogin()
+#11 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#12 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#13 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php(282): CController->run('login')
+#15 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#16 /home/dmitryshibko/public_html/sp-admin.loc/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#17 /home/dmitryshibko/public_html/sp-admin.loc/public/index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/index.php?r=site/login
+HTTP_REFERER=http://sp-admin.loc/
+---
+2013/12/03 15:01:51 [error] [exception.CException] exception 'CException' with message 'Property "LoginForm.username" is not defined.' in /home/dmitryshibko/public_html/sp-admin.loc/framework/base/CComponent.php:130
+Stack trace:
+#0 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/helpers/CHtml.php(2529): CComponent->__get('username')
+#1 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/helpers/CHtml.php(2252): CHtml::resolveValue(Object(LoginForm), 'username')
+#2 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/helpers/CHtml.php(1434): CHtml::activeInputField('text', Object(LoginForm), 'username', Array)
+#3 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/widgets/CActiveForm.php(725): CHtml::activeTextField(Object(LoginForm), 'username', Array)
+#4 /home/dmitryshibko/public_html/sp-admin.loc/public/protected/views/site/login.php(29): CActiveForm->textField(Object(LoginForm), 'username')
+#5 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CBaseController.php(126): require('/home/dmitryshi...')
+#6 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/dmitryshi...', Array, true)
+#7 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(869): CBaseController->renderFile('/home/dmitryshi...', Array, true)
+#8 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(782): CController->renderPartial('login', Array, true)
+#9 /home/dmitryshibko/public_html/sp-admin.loc/public/protected/controllers/SiteController.php(98): CController->render('login', Array)
+#10 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/actions/CInlineAction.php(49): SiteController->actionLogin()
+#11 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#12 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#13 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php(282): CController->run('login')
+#15 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#16 /home/dmitryshibko/public_html/sp-admin.loc/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#17 /home/dmitryshibko/public_html/sp-admin.loc/public/index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/index.php?r=site/login
+HTTP_REFERER=http://sp-admin.loc/
+---
+2013/12/03 15:01:51 [error] [exception.CException] exception 'CException' with message 'Property "LoginForm.username" is not defined.' in /home/dmitryshibko/public_html/sp-admin.loc/framework/base/CComponent.php:130
+Stack trace:
+#0 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/helpers/CHtml.php(2529): CComponent->__get('username')
+#1 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/helpers/CHtml.php(2252): CHtml::resolveValue(Object(LoginForm), 'username')
+#2 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/helpers/CHtml.php(1434): CHtml::activeInputField('text', Object(LoginForm), 'username', Array)
+#3 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/widgets/CActiveForm.php(725): CHtml::activeTextField(Object(LoginForm), 'username', Array)
+#4 /home/dmitryshibko/public_html/sp-admin.loc/public/protected/views/site/login.php(29): CActiveForm->textField(Object(LoginForm), 'username')
+#5 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CBaseController.php(126): require('/home/dmitryshi...')
+#6 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/dmitryshi...', Array, true)
+#7 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(869): CBaseController->renderFile('/home/dmitryshi...', Array, true)
+#8 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(782): CController->renderPartial('login', Array, true)
+#9 /home/dmitryshibko/public_html/sp-admin.loc/public/protected/controllers/SiteController.php(98): CController->render('login', Array)
+#10 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/actions/CInlineAction.php(49): SiteController->actionLogin()
+#11 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#12 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#13 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php(282): CController->run('login')
+#15 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#16 /home/dmitryshibko/public_html/sp-admin.loc/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#17 /home/dmitryshibko/public_html/sp-admin.loc/public/index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/index.php?r=site/login
+HTTP_REFERER=http://sp-admin.loc/
+---
+2013/12/03 15:01:51 [error] [exception.CException] exception 'CException' with message 'Property "LoginForm.username" is not defined.' in /home/dmitryshibko/public_html/sp-admin.loc/framework/base/CComponent.php:130
+Stack trace:
+#0 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/helpers/CHtml.php(2529): CComponent->__get('username')
+#1 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/helpers/CHtml.php(2252): CHtml::resolveValue(Object(LoginForm), 'username')
+#2 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/helpers/CHtml.php(1434): CHtml::activeInputField('text', Object(LoginForm), 'username', Array)
+#3 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/widgets/CActiveForm.php(725): CHtml::activeTextField(Object(LoginForm), 'username', Array)
+#4 /home/dmitryshibko/public_html/sp-admin.loc/public/protected/views/site/login.php(29): CActiveForm->textField(Object(LoginForm), 'username')
+#5 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CBaseController.php(126): require('/home/dmitryshi...')
+#6 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/dmitryshi...', Array, true)
+#7 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(869): CBaseController->renderFile('/home/dmitryshi...', Array, true)
+#8 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(782): CController->renderPartial('login', Array, true)
+#9 /home/dmitryshibko/public_html/sp-admin.loc/public/protected/controllers/SiteController.php(98): CController->render('login', Array)
+#10 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/actions/CInlineAction.php(49): SiteController->actionLogin()
+#11 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#12 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#13 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php(282): CController->run('login')
+#15 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#16 /home/dmitryshibko/public_html/sp-admin.loc/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#17 /home/dmitryshibko/public_html/sp-admin.loc/public/index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/index.php?r=site/login
+HTTP_REFERER=http://sp-admin.loc/
+---
+2013/12/03 15:01:52 [error] [exception.CException] exception 'CException' with message 'Property "LoginForm.username" is not defined.' in /home/dmitryshibko/public_html/sp-admin.loc/framework/base/CComponent.php:130
+Stack trace:
+#0 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/helpers/CHtml.php(2529): CComponent->__get('username')
+#1 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/helpers/CHtml.php(2252): CHtml::resolveValue(Object(LoginForm), 'username')
+#2 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/helpers/CHtml.php(1434): CHtml::activeInputField('text', Object(LoginForm), 'username', Array)
+#3 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/widgets/CActiveForm.php(725): CHtml::activeTextField(Object(LoginForm), 'username', Array)
+#4 /home/dmitryshibko/public_html/sp-admin.loc/public/protected/views/site/login.php(29): CActiveForm->textField(Object(LoginForm), 'username')
+#5 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CBaseController.php(126): require('/home/dmitryshi...')
+#6 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/dmitryshi...', Array, true)
+#7 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(869): CBaseController->renderFile('/home/dmitryshi...', Array, true)
+#8 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(782): CController->renderPartial('login', Array, true)
+#9 /home/dmitryshibko/public_html/sp-admin.loc/public/protected/controllers/SiteController.php(98): CController->render('login', Array)
+#10 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/actions/CInlineAction.php(49): SiteController->actionLogin()
+#11 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#12 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#13 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php(282): CController->run('login')
+#15 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#16 /home/dmitryshibko/public_html/sp-admin.loc/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#17 /home/dmitryshibko/public_html/sp-admin.loc/public/index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/index.php?r=site/login
+---
+2013/12/03 15:02:26 [error] [exception.CException] exception 'CException' with message 'Property "UserIdentity.email" is not defined.' in /home/dmitryshibko/public_html/sp-admin.loc/framework/base/CComponent.php:130
+Stack trace:
+#0 /home/dmitryshibko/public_html/sp-admin.loc/public/protected/components/UserIdentity.php(8): CComponent->__get('email')
+#1 /home/dmitryshibko/public_html/sp-admin.loc/public/protected/models/LoginForm.php(52): UserIdentity->authenticate()
+#2 /home/dmitryshibko/public_html/sp-admin.loc/framework/validators/CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#3 /home/dmitryshibko/public_html/sp-admin.loc/framework/validators/CValidator.php(213): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#4 /home/dmitryshibko/public_html/sp-admin.loc/framework/base/CModel.php(159): CValidator->validate(Object(LoginForm), NULL)
+#5 /home/dmitryshibko/public_html/sp-admin.loc/public/protected/controllers/SiteController.php(94): CModel->validate()
+#6 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/actions/CInlineAction.php(49): SiteController->actionLogin()
+#7 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php(282): CController->run('login')
+#11 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#12 /home/dmitryshibko/public_html/sp-admin.loc/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#13 /home/dmitryshibko/public_html/sp-admin.loc/public/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/index.php?r=site/login
+HTTP_REFERER=http://sp-admin.loc/index.php?r=site/login
+---
+2013/12/03 15:15:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "public/site/contacts".' in /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php(141): CWebApplication->runController('public/site/con...')
+#1 /home/dmitryshibko/public_html/sp-admin.loc/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/dmitryshibko/public_html/sp-admin.loc/public/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/public/site/contacts/
+---
+2013/12/03 15:15:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "public/site/page".' in /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php(141): CWebApplication->runController('public/site/pag...')
+#1 /home/dmitryshibko/public_html/sp-admin.loc/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/dmitryshibko/public_html/sp-admin.loc/public/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/public/site/page/?view=about
+---
+2013/12/03 15:15:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "public/site/index".' in /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php(141): CWebApplication->runController('public/site/ind...')
+#1 /home/dmitryshibko/public_html/sp-admin.loc/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/dmitryshibko/public_html/sp-admin.loc/public/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/public/site/index/
+---
+2013/12/03 15:16:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "public/site/index".' in /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php(141): CWebApplication->runController('public/site/ind...')
+#1 /home/dmitryshibko/public_html/sp-admin.loc/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/dmitryshibko/public_html/sp-admin.loc/public/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/public/site/index/
+---
+2013/12/03 15:16:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "public/site/page".' in /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php(141): CWebApplication->runController('public/site/pag...')
+#1 /home/dmitryshibko/public_html/sp-admin.loc/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/dmitryshibko/public_html/sp-admin.loc/public/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/public/site/page/?view=about
+---
+2013/12/03 15:16:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "public/site/page".' in /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php(141): CWebApplication->runController('public/site/pag...')
+#1 /home/dmitryshibko/public_html/sp-admin.loc/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/dmitryshibko/public_html/sp-admin.loc/public/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/public/site/page/?view=about
+---
+2013/12/03 15:16:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "public/site/page".' in /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php(141): CWebApplication->runController('public/site/pag...')
+#1 /home/dmitryshibko/public_html/sp-admin.loc/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/dmitryshibko/public_html/sp-admin.loc/public/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/public/site/page/?view=about
+---
+2013/12/03 15:16:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "public/site/page".' in /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php(141): CWebApplication->runController('public/site/pag...')
+#1 /home/dmitryshibko/public_html/sp-admin.loc/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/dmitryshibko/public_html/sp-admin.loc/public/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/public/site/page/?view=about
+---
+2013/12/03 15:16:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "public/site/index".' in /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php(141): CWebApplication->runController('public/site/ind...')
+#1 /home/dmitryshibko/public_html/sp-admin.loc/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/dmitryshibko/public_html/sp-admin.loc/public/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/public/site/index/
+---
+2013/12/03 15:16:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "public/site/contact".' in /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php(141): CWebApplication->runController('public/site/con...')
+#1 /home/dmitryshibko/public_html/sp-admin.loc/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/dmitryshibko/public_html/sp-admin.loc/public/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/public/site/contact/
+---
+2013/12/03 15:16:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "public/site/contact".' in /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php(141): CWebApplication->runController('public/site/con...')
+#1 /home/dmitryshibko/public_html/sp-admin.loc/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/dmitryshibko/public_html/sp-admin.loc/public/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/public/site/contact/
+---
+2013/12/03 15:25:09 [error] [exception.CException] exception 'CException' with message 'Property "CUrlManager.showControllerName" is not defined.' in /home/dmitryshibko/public_html/sp-admin.loc/framework/base/CComponent.php:173
+Stack trace:
+#0 /home/dmitryshibko/public_html/sp-admin.loc/framework/YiiBase.php(220): CComponent->__set('showControllerN...', false)
+#1 /home/dmitryshibko/public_html/sp-admin.loc/framework/base/CModule.php(386): YiiBase::createComponent(Array)
+#2 /home/dmitryshibko/public_html/sp-admin.loc/framework/base/CApplication.php(522): CModule->getComponent('urlManager')
+#3 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php(140): CApplication->getUrlManager()
+#4 /home/dmitryshibko/public_html/sp-admin.loc/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#5 /home/dmitryshibko/public_html/sp-admin.loc/public/index.php(13): CApplication->run()
+#6 {main}
+REQUEST_URI=/site/index
+HTTP_REFERER=http://sp-admin.loc/site/page/view/about
+---
+2013/12/03 15:25:10 [error] [exception.CException] exception 'CException' with message 'Property "CUrlManager.showControllerName" is not defined.' in /home/dmitryshibko/public_html/sp-admin.loc/framework/base/CComponent.php:173
+Stack trace:
+#0 /home/dmitryshibko/public_html/sp-admin.loc/framework/YiiBase.php(220): CComponent->__set('showControllerN...', false)
+#1 /home/dmitryshibko/public_html/sp-admin.loc/framework/base/CModule.php(386): YiiBase::createComponent(Array)
+#2 /home/dmitryshibko/public_html/sp-admin.loc/framework/base/CApplication.php(522): CModule->getComponent('urlManager')
+#3 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php(140): CApplication->getUrlManager()
+#4 /home/dmitryshibko/public_html/sp-admin.loc/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#5 /home/dmitryshibko/public_html/sp-admin.loc/public/index.php(13): CApplication->run()
+#6 {main}
+REQUEST_URI=/site/index
+HTTP_REFERER=http://sp-admin.loc/site/page/view/about
+---
+2013/12/03 15:36:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "projects/add".' in /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php(141): CWebApplication->runController('projects/add')
+#1 /home/dmitryshibko/public_html/sp-admin.loc/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/dmitryshibko/public_html/sp-admin.loc/public/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/projects/add
+HTTP_REFERER=http://sp-admin.loc/site/index
+---
+2013/12/03 15:37:48 [error] [exception.CException] exception 'CException' with message 'The URL pattern "<controller:/w+>/<action:/w+>" for route "<action:/w+>" is not a valid regular expression.' in /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CUrlManager.php:701
+Stack trace:
+#0 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CUrlManager.php(270): CUrlRule->__construct('<action:/w+>', '<controller:/w+...')
+#1 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CUrlManager.php(226): CUrlManager->createUrlRule('<action:/w+>', '<controller:/w+...')
+#2 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CUrlManager.php(206): CUrlManager->processRules()
+#3 /home/dmitryshibko/public_html/sp-admin.loc/framework/base/CModule.php(387): CUrlManager->init()
+#4 /home/dmitryshibko/public_html/sp-admin.loc/framework/base/CApplication.php(522): CModule->getComponent('urlManager')
+#5 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php(140): CApplication->getUrlManager()
+#6 /home/dmitryshibko/public_html/sp-admin.loc/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#7 /home/dmitryshibko/public_html/sp-admin.loc/public/index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/
+---
+2013/12/03 15:37:52 [error] [exception.CException] exception 'CException' with message 'The URL pattern "<controller:/w+>/<action:/w+>" for route "<action:/w+>" is not a valid regular expression.' in /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CUrlManager.php:701
+Stack trace:
+#0 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CUrlManager.php(270): CUrlRule->__construct('<action:/w+>', '<controller:/w+...')
+#1 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CUrlManager.php(226): CUrlManager->createUrlRule('<action:/w+>', '<controller:/w+...')
+#2 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CUrlManager.php(206): CUrlManager->processRules()
+#3 /home/dmitryshibko/public_html/sp-admin.loc/framework/base/CModule.php(387): CUrlManager->init()
+#4 /home/dmitryshibko/public_html/sp-admin.loc/framework/base/CApplication.php(522): CModule->getComponent('urlManager')
+#5 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php(140): CApplication->getUrlManager()
+#6 /home/dmitryshibko/public_html/sp-admin.loc/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#7 /home/dmitryshibko/public_html/sp-admin.loc/public/index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/projects
+---
+2013/12/03 15:38:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "projects".' in /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php(141): CWebApplication->runController('projects')
+#1 /home/dmitryshibko/public_html/sp-admin.loc/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/dmitryshibko/public_html/sp-admin.loc/public/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/projects
+---
+2013/12/03 15:38:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "projects".' in /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php(141): CWebApplication->runController('projects')
+#1 /home/dmitryshibko/public_html/sp-admin.loc/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/dmitryshibko/public_html/sp-admin.loc/public/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/projects
+---
+2013/12/03 15:38:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "index".' in /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php(141): CWebApplication->runController('index')
+#1 /home/dmitryshibko/public_html/sp-admin.loc/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/dmitryshibko/public_html/sp-admin.loc/public/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/site/index
+HTTP_REFERER=http://sp-admin.loc/projects
+---
+2013/12/03 15:38:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "index".' in /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php(141): CWebApplication->runController('index')
+#1 /home/dmitryshibko/public_html/sp-admin.loc/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/dmitryshibko/public_html/sp-admin.loc/public/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/site/index
+HTTP_REFERER=http://sp-admin.loc/site/page/view/about
+---
+2013/12/03 15:38:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "add".' in /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php(141): CWebApplication->runController('add')
+#1 /home/dmitryshibko/public_html/sp-admin.loc/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/dmitryshibko/public_html/sp-admin.loc/public/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/projects/add
+HTTP_REFERER=http://sp-admin.loc/
+---
+2013/12/03 15:38:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "projects".' in /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php(141): CWebApplication->runController('projects')
+#1 /home/dmitryshibko/public_html/sp-admin.loc/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/dmitryshibko/public_html/sp-admin.loc/public/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/projects/
+---
+2013/12/03 15:38:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "projects".' in /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php(141): CWebApplication->runController('projects')
+#1 /home/dmitryshibko/public_html/sp-admin.loc/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/dmitryshibko/public_html/sp-admin.loc/public/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/projects/
+---
+2013/12/03 15:38:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "projects".' in /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php(141): CWebApplication->runController('projects')
+#1 /home/dmitryshibko/public_html/sp-admin.loc/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/dmitryshibko/public_html/sp-admin.loc/public/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/projects/
+---
+2013/12/03 15:38:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "projects".' in /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php(141): CWebApplication->runController('projects')
+#1 /home/dmitryshibko/public_html/sp-admin.loc/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/dmitryshibko/public_html/sp-admin.loc/public/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/projects/
+---
+2013/12/03 15:38:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "projects".' in /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php(141): CWebApplication->runController('projects')
+#1 /home/dmitryshibko/public_html/sp-admin.loc/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/dmitryshibko/public_html/sp-admin.loc/public/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/projects/
+---
+2013/12/03 15:38:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "projects".' in /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php(141): CWebApplication->runController('projects')
+#1 /home/dmitryshibko/public_html/sp-admin.loc/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/dmitryshibko/public_html/sp-admin.loc/public/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/projects/
+---
+2013/12/03 15:39:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "<action:\w+>".' in /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php:483
+Stack trace:
+#0 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(270): CController->missingAction('<action:\w+>')
+#1 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php(282): CController->run('<action:\w+>')
+#2 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php(141): CWebApplication->runController('site/<action:\w...')
+#3 /home/dmitryshibko/public_html/sp-admin.loc/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/dmitryshibko/public_html/sp-admin.loc/public/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/projects/
+---
+2013/12/03 15:40:47 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "projects".' in /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php:878
+Stack trace:
+#0 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(782): CController->renderPartial('projects', Array, true)
+#1 /home/dmitryshibko/public_html/sp-admin.loc/public/protected/controllers/SiteController.php(38): CController->render('projects', Array)
+#2 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/actions/CInlineAction.php(49): SiteController->actionProjects()
+#3 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php(282): CController->run('projects')
+#7 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php(141): CWebApplication->runController('site/projects')
+#8 /home/dmitryshibko/public_html/sp-admin.loc/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /home/dmitryshibko/public_html/sp-admin.loc/public/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/projects/
+---
+2013/12/03 15:41:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "projects".' in /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php:483
+Stack trace:
+#0 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(270): CController->missingAction('projects')
+#1 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php(282): CController->run('projects')
+#2 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php(141): CWebApplication->runController('site/projects')
+#3 /home/dmitryshibko/public_html/sp-admin.loc/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/dmitryshibko/public_html/sp-admin.loc/public/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/projects/
+---
+2013/12/03 15:41:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "projects-add".' in /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php(141): CWebApplication->runController('projects-add')
+#1 /home/dmitryshibko/public_html/sp-admin.loc/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/dmitryshibko/public_html/sp-admin.loc/public/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/projects-add/
+---
+2013/12/03 15:43:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "projects-add".' in /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php(141): CWebApplication->runController('projects-add')
+#1 /home/dmitryshibko/public_html/sp-admin.loc/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/dmitryshibko/public_html/sp-admin.loc/public/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/projects-add/
+---
+2013/12/03 15:43:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "projects/add".' in /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php(141): CWebApplication->runController('projects/add')
+#1 /home/dmitryshibko/public_html/sp-admin.loc/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/dmitryshibko/public_html/sp-admin.loc/public/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/projects/add/
+HTTP_REFERER=http://sp-admin.loc/projects/
+---
+2013/12/03 15:46:27 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`scorepredictor`.`projects`, CONSTRAINT `projects_ibfk_1` FOREIGN KEY (`app_club`) REFERENCES `team` (`id`)). The SQL statement executed was: INSERT INTO `projects` (`created`) VALUES (:yp0).
+in /home/dmitryshibko/public_html/sp-admin.loc/public/protected/controllers/SiteController.php (46)
+in /home/dmitryshibko/public_html/sp-admin.loc/public/index.php (13)
+2013/12/03 15:46:27 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`scorepredictor`.`projects`, CONSTRAINT `projects_ibfk_1` FOREIGN KEY (`app_club`) REFERENCES `team` (`id`)). The SQL statement executed was: INSERT INTO `projects` (`created`) VALUES (:yp0)' in /home/dmitryshibko/public_html/sp-admin.loc/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /home/dmitryshibko/public_html/sp-admin.loc/framework/db/ar/CActiveRecord.php(1077): CDbCommand->execute()
+#1 /home/dmitryshibko/public_html/sp-admin.loc/public/protected/controllers/SiteController.php(46): CActiveRecord->insert()
+#2 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/actions/CInlineAction.php(49): SiteController->actionAddProjects()
+#3 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php(282): CController->run('addprojects')
+#7 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php(141): CWebApplication->runController('site/addproject...')
+#8 /home/dmitryshibko/public_html/sp-admin.loc/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /home/dmitryshibko/public_html/sp-admin.loc/public/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/projects/add/
+HTTP_REFERER=http://sp-admin.loc/projects/
+---
+2013/12/03 15:46:49 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`scorepredictor`.`projects`, CONSTRAINT `projects_ibfk_1` FOREIGN KEY (`app_club`) REFERENCES `team` (`id`)). The SQL statement executed was: INSERT INTO `projects` (`created`) VALUES (:yp0).
+in /home/dmitryshibko/public_html/sp-admin.loc/public/protected/controllers/SiteController.php (47)
+in /home/dmitryshibko/public_html/sp-admin.loc/public/index.php (13)
+2013/12/03 15:46:49 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`scorepredictor`.`projects`, CONSTRAINT `projects_ibfk_1` FOREIGN KEY (`app_club`) REFERENCES `team` (`id`)). The SQL statement executed was: INSERT INTO `projects` (`created`) VALUES (:yp0)' in /home/dmitryshibko/public_html/sp-admin.loc/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /home/dmitryshibko/public_html/sp-admin.loc/framework/db/ar/CActiveRecord.php(1077): CDbCommand->execute()
+#1 /home/dmitryshibko/public_html/sp-admin.loc/public/protected/controllers/SiteController.php(47): CActiveRecord->insert()
+#2 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/actions/CInlineAction.php(49): SiteController->actionAddProjects()
+#3 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php(282): CController->run('addprojects')
+#7 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php(141): CWebApplication->runController('site/addproject...')
+#8 /home/dmitryshibko/public_html/sp-admin.loc/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /home/dmitryshibko/public_html/sp-admin.loc/public/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/projects/add/
+HTTP_REFERER=http://sp-admin.loc/projects/
+---
+2013/12/03 15:47:08 [error] [exception.CException] exception 'CException' with message 'Property "Projects.url" is not defined.' in /home/dmitryshibko/public_html/sp-admin.loc/framework/base/CComponent.php:130
+Stack trace:
+#0 /home/dmitryshibko/public_html/sp-admin.loc/framework/db/ar/CActiveRecord.php(145): CComponent->__get('url')
+#1 /home/dmitryshibko/public_html/sp-admin.loc/public/protected/views/site/index.php(7): CActiveRecord->__get('url')
+#2 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CBaseController.php(126): require('/home/dmitryshi...')
+#3 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/dmitryshi...', Array, true)
+#4 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(869): CBaseController->renderFile('/home/dmitryshi...', Array, true)
+#5 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#6 /home/dmitryshibko/public_html/sp-admin.loc/public/protected/controllers/SiteController.php(49): CController->render('index', Array)
+#7 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/actions/CInlineAction.php(49): SiteController->actionAddProjects()
+#8 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php(282): CController->run('addprojects')
+#12 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php(141): CWebApplication->runController('site/addproject...')
+#13 /home/dmitryshibko/public_html/sp-admin.loc/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#14 /home/dmitryshibko/public_html/sp-admin.loc/public/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/projects/add/
+HTTP_REFERER=http://sp-admin.loc/projects/
+---
+2013/12/03 15:47:22 [error] [exception.CException] exception 'CException' with message 'Property "Projects.url" is not defined.' in /home/dmitryshibko/public_html/sp-admin.loc/framework/base/CComponent.php:130
+Stack trace:
+#0 /home/dmitryshibko/public_html/sp-admin.loc/framework/db/ar/CActiveRecord.php(145): CComponent->__get('url')
+#1 /home/dmitryshibko/public_html/sp-admin.loc/public/protected/views/site/index.php(7): CActiveRecord->__get('url')
+#2 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CBaseController.php(126): require('/home/dmitryshi...')
+#3 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/dmitryshi...', Array, true)
+#4 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(869): CBaseController->renderFile('/home/dmitryshi...', Array, true)
+#5 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#6 /home/dmitryshibko/public_html/sp-admin.loc/public/protected/controllers/SiteController.php(49): CController->render('index', Array)
+#7 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/actions/CInlineAction.php(49): SiteController->actionAddProjects()
+#8 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php(282): CController->run('addprojects')
+#12 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php(141): CWebApplication->runController('site/addproject...')
+#13 /home/dmitryshibko/public_html/sp-admin.loc/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#14 /home/dmitryshibko/public_html/sp-admin.loc/public/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/projects/add/
+HTTP_REFERER=http://sp-admin.loc/projects/
+---
+2013/12/04 08:26:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /home/dmitryshibko/public_html/sp-admin.loc/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/dmitryshibko/public_html/sp-admin.loc/public/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
