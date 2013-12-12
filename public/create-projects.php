@@ -7,7 +7,7 @@ $source_db="tpl_sp";
 mysql_connect("localhost","root","123");
 mysql_select_db($db);
 
-$result=mysql_query("SELECT * FROM `projects` WHERE `created` = 1");
+$result=mysql_query("SELECT * FROM `projects` WHERE `created` = 0");
 
 $optaFeedsArray = array('F1', 'F2', 'F7', 'F40');
 
@@ -31,8 +31,8 @@ if (!empty($projects)) {
 
         mysql_select_db($new_db);
         foreach ($table_names as $table) {
-            //mysql_query("CREATE TABLE `".$table."` LIKE `$source_db`.`".$table."`");
-            //mysql_query("INSERT INTO `".$table."` SELECT * FROM `$source_db`.`".$table."`");
+            mysql_query("CREATE TABLE `".$table."` LIKE `$source_db`.`".$table."`");
+            mysql_query("INSERT INTO `".$table."` SELECT * FROM `$source_db`.`".$table."`");
         }
 
         $config = file_get_contents('config_template.txt');
