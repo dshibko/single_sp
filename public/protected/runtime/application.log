@@ -9174,3 +9174,45 @@ in /home/dmitryshibko/public_html/sp-admin.loc/public/index.php (13)
 in /home/dmitryshibko/public_html/sp-admin.loc/public/protected/controllers/SiteController.php (57)
 in /home/dmitryshibko/public_html/sp-admin.loc/public/protected/controllers/SiteController.php (37)
 in /home/dmitryshibko/public_html/sp-admin.loc/public/index.php (13)
+2013/12/12 11:16:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "create_projects.php".' in /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php(141): CWebApplication->runController('create_projects...')
+#1 /home/dmitryshibko/public_html/sp-admin.loc/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/dmitryshibko/public_html/sp-admin.loc/public/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/create_projects.php
+---
+2013/12/12 11:16:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /home/dmitryshibko/public_html/sp-admin.loc/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/dmitryshibko/public_html/sp-admin.loc/public/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/12/12 11:16:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /home/dmitryshibko/public_html/sp-admin.loc/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/dmitryshibko/public_html/sp-admin.loc/public/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/12/12 11:17:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "create_projects.php".' in /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php(141): CWebApplication->runController('create_projects...')
+#1 /home/dmitryshibko/public_html/sp-admin.loc/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/dmitryshibko/public_html/sp-admin.loc/public/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/create_projects.php
+---
+2013/12/12 11:17:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "create_projects".' in /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php:483
+Stack trace:
+#0 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CController.php(270): CController->missingAction('create_projects')
+#1 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php(282): CController->run('create_projects')
+#2 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php(141): CWebApplication->runController('site/create_pro...')
+#3 /home/dmitryshibko/public_html/sp-admin.loc/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/dmitryshibko/public_html/sp-admin.loc/public/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/create_projects
+---
