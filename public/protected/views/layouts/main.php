@@ -25,7 +25,6 @@
     <!-- END GLOBAL MANDATORY STYLES -->
     <!-- BEGIN PAGE LEVEL STYLES -->
     <link href="<?php echo Yii::app()->request->baseUrl; ?>/plugins/glyphicons/css/glyphicons.css" rel="stylesheet">
-    <link href="<?php echo Yii::app()->request->baseUrl; ?>/plugins/gritter/css/jquery.gritter.css" rel="stylesheet" type="text/css"/>
     <link href="<?php echo Yii::app()->request->baseUrl; ?>/plugins/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet" type="text/css" />
     <link href="<?php echo Yii::app()->request->baseUrl; ?>/plugins/fullcalendar/fullcalendar/bootstrap-fullcalendar.css" rel="stylesheet" type="text/css"/>
 
@@ -69,7 +68,6 @@
 <script src="<?php echo Yii::app()->request->baseUrl; ?>/plugins/jquery.pulsate.min.js" type="text/javascript"></script>
 <script src="<?php echo Yii::app()->request->baseUrl; ?>/plugins/bootstrap-daterangepicker/date.js" type="text/javascript"></script>
 <script src="<?php echo Yii::app()->request->baseUrl; ?>/plugins/bootstrap-daterangepicker/daterangepicker.js" type="text/javascript"></script>
-<script src="<?php echo Yii::app()->request->baseUrl; ?>/plugins/gritter/js/jquery.gritter.js" type="text/javascript"></script>
 <script src="<?php echo Yii::app()->request->baseUrl; ?>/plugins/fullcalendar/fullcalendar/fullcalendar.min.js" type="text/javascript"></script>
 <!-- END PAGE LEVEL PLUGINS -->
 <!-- BEGIN PAGE LEVEL SCRIPTS -->

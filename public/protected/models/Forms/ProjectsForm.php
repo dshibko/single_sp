@@ -6,11 +6,14 @@ class ProjectsForm extends CFormModel
 	public $project_url;
 	public $custom_styles;
 	public $prefix;
+    public $favicon;
 	public $app_club;
 	public $created;
     public $facebook_app_id;
     public $facebook_app_secret;
     public $facebook_canvas_app_url;
+
+    public $allowedFaviconTypes = array('gif', 'png', 'jpg', 'jpeg');
 
 	/**
 	 * Declares the validation rules.
@@ -18,7 +21,8 @@ class ProjectsForm extends CFormModel
 	public function rules()
 	{
 		return array(
-			array('project_url, prefix, app_club, facebook_app_id, facebook_app_secret', 'required'),
+			array('project_url, prefix, app_club, facebook_app_id, facebook_app_secret, favicon', 'required'),
+            array('custom_styles', 'type', 'type'=>'string'),
             array('prefix, project_url', 'length', 'min'=>3),
 		);
 	}
@@ -34,6 +38,7 @@ class ProjectsForm extends CFormModel
 			'project_url'               => 'URL of a new site',
             'app_club'                  => 'Site home club',
             'prefix'                    => 'Database prefix',
+            'favicon'                   => 'Favicon',
             'facebook_app_id'           => 'Facebook application ID',
             'facebook_app_secret'       => 'Facebook application secret key',
             'facebook_canvas_app_url'   => 'Facebook canvas application URL',
@@ -56,6 +61,11 @@ class ProjectsForm extends CFormModel
                     'id'=>'prefix',
                     'maxlength'=>32,
                     'minlength'=>3,
+                ),
+                'favicon'=>array(
+                    'type'=>'fileupload',
+                    'id'=>'favicon',
+                    'prompt'=>'Upload Favicon'
                 ),
                 'app_club'=>array(
                     'type'=>'dropdownlist',

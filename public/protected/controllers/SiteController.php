@@ -2,23 +2,12 @@
 
 class SiteController extends Controller
 {
-	/**
-	 * Declares class-based actions.
-	 */
-	public function actions()
+
+	public function init()
 	{
-		return array(
-			// captcha action renders the CAPTCHA image displayed on the contact page
-			'captcha'=>array(
-				'class'=>'CCaptchaAction',
-				'backColor'=>0xFFFFFF,
-			),
-			// page action renders "static" forms stored under 'protected/views/site/forms'
-			// They can be accessed via: index.php?r=site/page&view=FileName
-			'page'=>array(
-				'class'=>'CViewAction',
-			),
-		);
+        if (Yii::app()->user->getIsGuest() && Yii::app()->request->pathInfo != 'login') {
+            return $this->redirect('/login');
+        }
 	}
 
 	/**
@@ -43,10 +32,10 @@ class SiteController extends Controller
             }
             switch ($do) {
                 case 'add':
-                case 'edit':
+                case 'view':
                     $post = Yii::app()->request->getPost('projects');
-                    $form = $this->editProject($id, $post);
-                    return $this->render('projectsEdit', array('form' => $form));
+                    $form = $this->editProject($id, $post, $do);
+                    return $this->render('projectsEdit', array('form' => $form, 'do' => $do));
                     break;
                 default:
                     return $this->redirect('/projects');
@@ -55,17 +44,36 @@ class SiteController extends Controller
         }
     }
 
-    protected function editProject($id = false, $post = false)
+    protected function editProject($id = false, $post = false, $do = 'add')
     {
         $projectsForm = new ProjectsForm();
         $projectsModel = new Projects();
 
         if (!empty($post)) {
             $projectsForm->attributes = $post;
+            $projectsForm->favicon = $_FILES['projects'];
             if ($projectsForm->validate()) {
                 $project = !empty($id) ? $projectsModel->findByPk($id) : $projectsModel;
                 $project->attributes = $post;
-                if ($project->save(true)) {
+                $project->custom_styles = $post['custom_styles'];
+                $project->project_url = preg_replace('#(http.*\:\/\/)#', '', trim($project->project_url, '/'));
+
+                $project->favicon = '';
+                if (!empty($_FILES['projects']) && $_FILES['projects']['error']['favicon'] == 0) {
+                    $name = $_FILES['projects']['name']['favicon'];
+                    $nameArr = explode('.', $name);
+                    if (!in_array($nameArr[count($nameArr) - 1], $projectsForm->allowedFaviconTypes)) {
+                        $projectsForm->addError('favicon', 'asd');
+                    } else {
+                        $imagePath = Yii::app()->basePath.'/../assets/fav'.$post['prefix'].'.png';
+                        move_uploaded_file($_FILES['projects']['tmp_name']['favicon'], $imagePath);
+                        $image = Yii::app()->image->load($imagePath);
+                        $image->resize(30, 30);
+                        $image->save();
+                        $project->favicon = $post['prefix'].'-fav.png';
+                    }
+                }
+                if ($project->save()) {
                     return $this->redirect('/projects');
                 }
             }
@@ -80,6 +88,78 @@ class SiteController extends Controller
         return $form;
     }
 
+    public function actionUsers($do = false, $id = false)
+    {
+        if (empty($do)) {
+            $userModel = new User();
+            $users = $userModel->with('role')->findAll();
+
+            return $this->render('users', array('users' => $users));
+        } else {
+            if (!empty($id) && (int)$id == 0) {
+                return $this->redirect('/users');
+            }
+            switch ($do) {
+                case 'add':
+                case 'edit':
+                case 'view':
+                    $post = Yii::app()->request->getPost('user');
+                    $form = $this->editUser($id, $post, $do);
+                    return $this->render('usersEdit', array('form' => $form, 'edit' => $id, 'do' => $do));
+                    break;
+                default:
+                    return $this->redirect('/users');
+                    break;
+            }
+        }
+    }
+
+    protected function editUser($id = false, $post = false, $do = 'add')
+    {
+        $usersForm = new UsersForm();
+        $userModel = new User();
+
+        if (!empty($post)) {
+            $usersForm->attributes = $post;
+            if ($usersForm->validate()) {
+                $user = !empty($id) ? $userModel->findByPk($id) : $userModel;
+                $post['password'] = !empty($id) ? $post['password'] : crypt($post['password']);
+                $user->attributes = $post;
+                if ($user->save(false)) {
+                    return $this->redirect('/users');
+                }
+            }
+        } else {
+            $user = !empty($id) ? $userModel->findByPk($id) : $userModel;
+            if (!empty($user)) {
+                $usersForm->attributes = $user->attributes;
+            }
+        }
+        $form = new CForm($usersForm->getElements(), $usersForm);
+
+        return $form;
+    }
+/*
+    public function actionOpta()
+    {
+        $feedsFrequency = array('F1' => 86400, 'F40' => 43200, 'F7' => 300, 'F2' => 86400);
+        $sourcePath = Yii::app()->params['sp_source_path'];
+
+        $projects = Projects::model()->findAllByAttributes(array('created' => 1));
+
+        foreach ($projects as $project) {
+            $projectOpta = Opta::model()->findAllByAttributes(array('project_id' => $project->id));
+            foreach ($projectOpta as $feed) {
+                if ($feed->last_sync <= time() - $feedsFrequency[$feed->feed_type]) {
+                    print_r(exec('cd '.$sourcePath.'; php public/index.php opta '.$feed->feed_type.' '.$project['project_url']));
+                    $feed->last_sync = time();
+                    $feed->save();
+                }
+            }
+        }
+        print_r($projects);
+    }
+*/
 	/**
 	 * This is the action to handle external exceptions.
 	 */
@@ -94,56 +174,19 @@ class SiteController extends Controller
 		}
 	}
 
-	/**
-	 * Displays the contact page
-	 */
-	public function actionContact()
-	{
-		$model=new ContactForm;
-		if(isset($_POST['ContactForm']))
-		{
-			$model->attributes=$_POST['ContactForm'];
-			if($model->validate())
-			{
-				$name='=?UTF-8?B?'.base64_encode($model->name).'?=';
-				$subject='=?UTF-8?B?'.base64_encode($model->subject).'?=';
-				$headers="From: $name <{$model->email}>\r\n".
-					"Reply-To: {$model->email}\r\n".
-					"MIME-Version: 1.0\r\n".
-					"Content-Type: text/plain; charset=UTF-8";
-
-				mail(Yii::app()->params['adminEmail'],$subject,$model->body,$headers);
-				Yii::app()->user->setFlash('contact','Thank you for contacting us. We will respond to you as soon as possible.');
-				$this->refresh();
-			}
-		}
-		$this->render('contact',array('model'=>$model));
-	}
-
-	/**
-	 * Displays the login page
-	 */
 	public function actionLogin()
 	{
-		$model=new LoginForm;
+		$model = new LoginForm;
 
-		// if it is ajax validation request
-		if(isset($_POST['ajax']) && $_POST['ajax']==='login-form')
+		$post = Yii::app()->request->getPost('LoginForm');
+		if(!empty($post))
 		{
-			echo CActiveForm::validate($model);
-			Yii::app()->end();
-		}
-
-		// collect user input data
-		if(isset($_POST['LoginForm']))
-		{
-			$model->attributes=$_POST['LoginForm'];
-			// validate user input and redirect to the previous page if valid
+			$model->attributes = $post;
 			if($model->validate() && $model->login())
 				$this->redirect(Yii::app()->user->returnUrl);
 		}
-		// display the login form
-		$this->render('login',array('model'=>$model));
+
+		$this->renderPartial('login',array('model'=>$model));
 	}
 
 	/**
@@ -152,6 +195,7 @@ class SiteController extends Controller
 	public function actionLogout()
 	{
 		Yii::app()->user->logout();
+
 		$this->redirect(Yii::app()->homeUrl);
 	}
 }

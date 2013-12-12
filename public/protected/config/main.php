@@ -5,6 +5,7 @@
 
 // This is the main Web application configuration. Any writable
 // CWebApplication properties can be configured here.
+
 return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
 	'name'=>'Score Predictor Admin',
@@ -35,9 +36,16 @@ return array(
 
 	// application components
 	'components'=>array(
+        'image' => array(
+            'class' => 'application.extensions.image.CImageComponent',
+            // GD or ImageMagick
+            'driver' => 'GD',
+            // ImageMagick setup path
+            'params' => array('directory' => '/opt/local/bin'),
+        ),
 		'user'=>array(
 			// enable cookie-based authentication
-			'allowAutoLogin'=>true,
+			'allowAutoLogin'=>false,
 		),
 		// uncomment the following to enable URLs in path-format
 
@@ -47,7 +55,7 @@ return array(
 			'rules'=>array(
                 '<action:\w+>' => 'site/<action>',
                 '<action:\w+>/<do:(add)>' => 'site/<action>',
-                '<action:\w+>/<do:(edit)>/<id:\d+>' => 'site/<action>',
+                '<action:\w+>/<do:(edit|view)>/<id:\d+>' => 'site/<action>',
 			),
 		),
 
@@ -83,6 +91,7 @@ return array(
 	// using Yii::app()->params['paramName']
 	'params'=>array(
 		// this is used in contact page
+        'sp_source_path' => '/home/dmitryshibko/public_html/sp.hiqo-solutions.loc/',
 		'adminEmail'=>'d.shibko@gmail.com',
 	),
 );

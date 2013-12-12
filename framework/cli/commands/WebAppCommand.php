@@ -128,6 +128,7 @@ EOD;
 	{
 		$fileList['index.php']['callback']=array($this,'generateIndex');
 		$fileList['index-test.php']['callback']=array($this,'generateIndex');
+        $fileList['create-projects.php']['callback']=array($this,'generateIndex');
 		$fileList['protected/tests/bootstrap.php']['callback']=array($this,'generateTestBoostrap');
 		$fileList['protected/yiic.php']['callback']=array($this,'generateYiic');
 	}

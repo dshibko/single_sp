@@ -32,7 +32,7 @@ class User extends CActiveRecord
 			array('role_id', 'numerical', 'integerOnly'=>true),
 			array('email', 'length', 'max'=>50),
 			array('password', 'length', 'max'=>100),
-			array('display_name', 'length', 'max'=>20),
+			array('display_name', 'length', 'max'=>30),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
 			array('id, email, password, display_name, role_id', 'safe', 'on'=>'search'),
@@ -47,6 +47,7 @@ class User extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
+            'role' => array(self::BELONGS_TO, 'Role', 'role_id'),
 		);
 	}
 

@@ -35,13 +35,13 @@ class Projects extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('project_url, prefix, app_club, facebook_app_id, facebook_app_secret', 'required'),
+			array('project_url, prefix, app_club, facebook_app_id, facebook_app_secret, favicon', 'required'),
 			array('app_club, created, facebook_app_id', 'numerical', 'integerOnly'=>true),
 			array('project_url, facebook_app_secret, facebook_canvas_app_url', 'length', 'max'=>255),
 			array('prefix', 'length', 'max'=>16),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, project_url, custom_styles, prefix, app_club, created, facebook_app_id, facebook_app_secret, facebook_canvas_app_url', 'safe', 'on'=>'search'),
+			array('id, project_url, custom_styles, prefix, app_club, created, facebook_app_id, facebook_app_secret, facebook_canvas_app_url, favicon', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -72,6 +72,7 @@ class Projects extends CActiveRecord
 			'facebook_app_id' => 'Facebook App',
 			'facebook_app_secret' => 'Facebook App Secret',
 			'facebook_canvas_app_url' => 'Facebook Canvas App Url',
+            'favicon' => 'Favicon',
 		);
 	}
 
@@ -102,6 +103,7 @@ class Projects extends CActiveRecord
 		$criteria->compare('facebook_app_id',$this->facebook_app_id);
 		$criteria->compare('facebook_app_secret',$this->facebook_app_secret,true);
 		$criteria->compare('facebook_canvas_app_url',$this->facebook_canvas_app_url,true);
+        $criteria->compare('favicon',$this->favicon,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

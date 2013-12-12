@@ -18,7 +18,7 @@
                         <div class="portlet-body">
                             <div class="clearfix">
                                 <div class="actions">
-                                    <a href="/projects/add/" class="btn green"><i class="icon-plus"></i> Add New</a>
+                                    <? if (Yii::app()->user->role == 1) : ?><a href="/projects/add/" class="btn green"><i class="icon-plus"></i> Add New</a><? endif; ?>
                                 </div>
                             </div>
                             <table class="table table-striped table-bordered table-advance table-hover">
@@ -48,7 +48,7 @@
                                             <td class="hidden-phone"><?=$project->facebook_app_id;?></td>
                                             <td class="hidden-phone"><?=$project->facebook_app_secret;?></td>
                                             <td class="hidden-phone"><?=$project->facebook_canvas_app_url;?></td>
-                                            <td><a href="/projects/edit/<?=$project->id;?>" class="btn mini purple"><i class="icon-edit"></i> Edit</a></td>
+                                            <td><a href="/projects/view/<?=$project->id;?>" class="btn mini blue-stripe">View</a></td>
                                         </tr>
                                     <? endforeach; ?>
                                 <? endif; ?>
