@@ -9096,3 +9096,81 @@ in /home/dmitryshibko/public_html/sp-admin.loc/public/index.php (13)
 in /home/dmitryshibko/public_html/sp-admin.loc/public/protected/controllers/SiteController.php (57)
 in /home/dmitryshibko/public_html/sp-admin.loc/public/protected/controllers/SiteController.php (37)
 in /home/dmitryshibko/public_html/sp-admin.loc/public/index.php (13)
+2013/12/12 10:57:03 [warning] [application] Failed to set unsafe attribute "created" of "ProjectsForm".
+in /home/dmitryshibko/public_html/sp-admin.loc/public/protected/controllers/SiteController.php (83)
+in /home/dmitryshibko/public_html/sp-admin.loc/public/protected/controllers/SiteController.php (37)
+in /home/dmitryshibko/public_html/sp-admin.loc/public/index.php (13)
+2013/12/12 10:57:03 [warning] [application] Failed to set unsafe attribute "id" of "ProjectsForm".
+in /home/dmitryshibko/public_html/sp-admin.loc/public/protected/controllers/SiteController.php (83)
+in /home/dmitryshibko/public_html/sp-admin.loc/public/protected/controllers/SiteController.php (37)
+in /home/dmitryshibko/public_html/sp-admin.loc/public/index.php (13)
+2013/12/12 10:57:03 [warning] [application] Failed to set unsafe attribute "facebook_canvas_app_url" of "ProjectsForm".
+in /home/dmitryshibko/public_html/sp-admin.loc/public/protected/controllers/SiteController.php (83)
+in /home/dmitryshibko/public_html/sp-admin.loc/public/protected/controllers/SiteController.php (37)
+in /home/dmitryshibko/public_html/sp-admin.loc/public/index.php (13)
+2013/12/12 10:57:08 [warning] [application] Failed to set unsafe attribute "facebook_canvas_app_url" of "ProjectsForm".
+in /home/dmitryshibko/public_html/sp-admin.loc/public/protected/controllers/SiteController.php (53)
+in /home/dmitryshibko/public_html/sp-admin.loc/public/protected/controllers/SiteController.php (37)
+in /home/dmitryshibko/public_html/sp-admin.loc/public/index.php (13)
+2013/12/12 10:57:08 [warning] [application] Failed to set unsafe attribute "custom_styles" of "Projects".
+in /home/dmitryshibko/public_html/sp-admin.loc/public/protected/controllers/SiteController.php (57)
+in /home/dmitryshibko/public_html/sp-admin.loc/public/protected/controllers/SiteController.php (37)
+in /home/dmitryshibko/public_html/sp-admin.loc/public/index.php (13)
+2013/12/12 10:57:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/qwd-fav.png".' in /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/qwd-fav....')
+#1 /home/dmitryshibko/public_html/sp-admin.loc/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/dmitryshibko/public_html/sp-admin.loc/public/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/qwd-fav.png
+HTTP_REFERER=http://sp-admin.loc/projects/add/
+---
+2013/12/12 10:57:15 [warning] [application] Failed to set unsafe attribute "created" of "ProjectsForm".
+in /home/dmitryshibko/public_html/sp-admin.loc/public/protected/controllers/SiteController.php (83)
+in /home/dmitryshibko/public_html/sp-admin.loc/public/protected/controllers/SiteController.php (37)
+in /home/dmitryshibko/public_html/sp-admin.loc/public/index.php (13)
+2013/12/12 10:57:15 [warning] [application] Failed to set unsafe attribute "id" of "ProjectsForm".
+in /home/dmitryshibko/public_html/sp-admin.loc/public/protected/controllers/SiteController.php (83)
+in /home/dmitryshibko/public_html/sp-admin.loc/public/protected/controllers/SiteController.php (37)
+in /home/dmitryshibko/public_html/sp-admin.loc/public/index.php (13)
+2013/12/12 10:57:15 [warning] [application] Failed to set unsafe attribute "facebook_canvas_app_url" of "ProjectsForm".
+in /home/dmitryshibko/public_html/sp-admin.loc/public/protected/controllers/SiteController.php (83)
+in /home/dmitryshibko/public_html/sp-admin.loc/public/protected/controllers/SiteController.php (37)
+in /home/dmitryshibko/public_html/sp-admin.loc/public/index.php (13)
+2013/12/12 10:57:34 [warning] [application] Failed to set unsafe attribute "facebook_canvas_app_url" of "ProjectsForm".
+in /home/dmitryshibko/public_html/sp-admin.loc/public/protected/controllers/SiteController.php (53)
+in /home/dmitryshibko/public_html/sp-admin.loc/public/protected/controllers/SiteController.php (37)
+in /home/dmitryshibko/public_html/sp-admin.loc/public/index.php (13)
+2013/12/12 10:57:34 [warning] [application] Failed to set unsafe attribute "custom_styles" of "Projects".
+in /home/dmitryshibko/public_html/sp-admin.loc/public/protected/controllers/SiteController.php (57)
+in /home/dmitryshibko/public_html/sp-admin.loc/public/protected/controllers/SiteController.php (37)
+in /home/dmitryshibko/public_html/sp-admin.loc/public/index.php (13)
+2013/12/12 10:57:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/dqw-fav.png".' in /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/dmitryshibko/public_html/sp-admin.loc/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/dqw-fav....')
+#1 /home/dmitryshibko/public_html/sp-admin.loc/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/dmitryshibko/public_html/sp-admin.loc/public/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/dqw-fav.png
+HTTP_REFERER=http://sp-admin.loc/projects/add/
+---
+2013/12/12 10:57:42 [warning] [application] Failed to set unsafe attribute "created" of "ProjectsForm".
+in /home/dmitryshibko/public_html/sp-admin.loc/public/protected/controllers/SiteController.php (83)
+in /home/dmitryshibko/public_html/sp-admin.loc/public/protected/controllers/SiteController.php (37)
+in /home/dmitryshibko/public_html/sp-admin.loc/public/index.php (13)
+2013/12/12 10:57:42 [warning] [application] Failed to set unsafe attribute "id" of "ProjectsForm".
+in /home/dmitryshibko/public_html/sp-admin.loc/public/protected/controllers/SiteController.php (83)
+in /home/dmitryshibko/public_html/sp-admin.loc/public/protected/controllers/SiteController.php (37)
+in /home/dmitryshibko/public_html/sp-admin.loc/public/index.php (13)
+2013/12/12 10:57:42 [warning] [application] Failed to set unsafe attribute "facebook_canvas_app_url" of "ProjectsForm".
+in /home/dmitryshibko/public_html/sp-admin.loc/public/protected/controllers/SiteController.php (83)
+in /home/dmitryshibko/public_html/sp-admin.loc/public/protected/controllers/SiteController.php (37)
+in /home/dmitryshibko/public_html/sp-admin.loc/public/index.php (13)
+2013/12/12 10:57:53 [warning] [application] Failed to set unsafe attribute "facebook_canvas_app_url" of "ProjectsForm".
+in /home/dmitryshibko/public_html/sp-admin.loc/public/protected/controllers/SiteController.php (53)
+in /home/dmitryshibko/public_html/sp-admin.loc/public/protected/controllers/SiteController.php (37)
+in /home/dmitryshibko/public_html/sp-admin.loc/public/index.php (13)
+2013/12/12 10:57:53 [warning] [application] Failed to set unsafe attribute "custom_styles" of "Projects".
+in /home/dmitryshibko/public_html/sp-admin.loc/public/protected/controllers/SiteController.php (57)
+in /home/dmitryshibko/public_html/sp-admin.loc/public/protected/controllers/SiteController.php (37)
+in /home/dmitryshibko/public_html/sp-admin.loc/public/index.php (13)

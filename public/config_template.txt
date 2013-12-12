@@ -1,0 +1,38 @@
+return array(
+    'app' => array(
+        'edition' => 'club',
+        'opta_id' => '{#app_club#}',
+        'opta_dir_path' => '/home/dmitryshibko/public_html/sp.hiqo-solutions.loc/data/feeds',
+        'clear_app_cache_url' => 'http://{#project_url#}/clear-app-cache/',
+        'clear_app_cache_allowed_ips' => array('127.0.0.1')
+    ),
+    'doctrine' => array(
+        'connection' => array(
+            'orm_default' => array(
+                'driverClass' => 'Doctrine\DBAL\Driver\PDOMySql\Driver',
+                'params' => array(
+                    'host' => 'localhost',
+                    'user' => 'root',
+                    'password' => '123',
+                    'dbname' => '{#project_db#}',
+                    'driverOptions' => array(1002=>'SET NAMES utf8'),
+                )
+            )
+        ),
+        'configuration' => array(
+            'orm_default' => array(
+                'generate_proxies'  => false,
+                'metadata_cache'    => '{#project_url#}-memcache',
+                'query_cache'       => '{#project_url#}-memcache',
+                'result_cache'      => '{#project_url#}-memcache',
+            )
+        ),
+    ),
+    'favicon_path' => '/img/fav-{#prefix#}.ico',
+    'facebook_api_key' => '{#facebook_app_id#}',
+    'facebook_secret_key' => '{#facebook_app_secret#}',
+    'facebook_canvas_app_url' => '{#facebook_canvas_app_url#}',
+    'app_styles' => '{#styles_postfix#}',
+    'is_geo_ip_blocked' => false,
+    'show_error_messages' => true
+);
