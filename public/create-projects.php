@@ -42,7 +42,7 @@ if (!empty($projects)) {
         $config = str_replace('{#project_db#}', $new_db, $config);
         $config = str_replace('{#facebook_app_id#}', $project['facebook_app_id'], $config);
         $config = str_replace('{#facebook_app_secret#}', $project['facebook_app_secret'], $config);
-        $config = str_replace('{#facebook_canvas_app_url#}', $poject['facebook_canvas_app_url'], $config);
+        $config = str_replace('{#facebook_canvas_app_url#}', $project['facebook_canvas_app_url'], $config);
         $config = str_replace('{#styles_postfix#}', !empty($project['custom_styles']) ? $project['prefix'] : '', $config);
         $config = str_replace('{#prefix#}', $project['prefix'], $config);
 
