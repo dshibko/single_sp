@@ -4,11 +4,11 @@ $db = "scorepredictor";
 
 $source_db="tpl_sp";
 
-mysql_connect("localhost","root","123");
+mysql_connect("10.14.43.7","spadmin","d&%7PC6/g938j=4TKeW=");
 mysql_select_db($db);
 
-$result=mysql_query("SELECT * FROM `projects` WHERE `created` = 1");
-
+$result=mysql_query("SELECT COUNT(*) FROM `projects` WHERE `created` = 0");
+die($result);
 $optaFeedsArray = array('F1', 'F2', 'F7', 'F40');
 
 $projects=array();
