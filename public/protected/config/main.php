@@ -60,10 +60,10 @@ return array(
 		),
 
         'db'=>array(
-            'connectionString' => 'mysql:host=10.14.43.7;dbname=scorepredictor',
+            'connectionString' => 'mysql:host=localhost;dbname=scorepredictor',
             'emulatePrepare' => true,
-            'username' => 'spadmin',
-            'password' => 'd&%7PC6/g938j=4TKeW=',
+            'username' => 'root',
+            'password' => '123',
             'charset' => 'utf8',
         ),
 		'errorHandler'=>array(

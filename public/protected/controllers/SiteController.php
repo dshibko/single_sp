@@ -70,6 +70,7 @@ class SiteController extends Controller
                         $image = Yii::app()->image->load($imagePath);
                         $image->resize(30, 30);
                         $image->save();
+                        rename($imagePath, str_replace('.png', '.ico', $imagePath));
                         $project->favicon = $post['prefix'].'-fav.png';
                     }
                 }
