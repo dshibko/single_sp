@@ -1,6 +1,7 @@
 return array(
     'app' => array(
         'edition' => 'club',
+        'club_short_name' => '{#short_name#}',
         'opta_id' => '{#app_club#}',
         'opta_dir_path' => '/home/dmitryshibko/public_html/sp.hiqo-solutions.loc/data/feeds',
         'clear_app_cache_url' => 'http://{#project_url#}/clear-app-cache/',
@@ -28,6 +29,9 @@ return array(
             )
         ),
     ),
+    'club_name' => '{#club_name#}',
+    'app_name' => '{#app_name#}',
+    'app_prefix' => '{#prefix#}',
     'favicon_path' => '/img/fav-{#prefix#}.ico',
     'facebook_api_key' => '{#facebook_app_id#}',
     'facebook_secret_key' => '{#facebook_app_secret#}',

@@ -15,6 +15,16 @@ echo CHtml::beginForm('', 'post', array('enctype'=>'multipart/form-data'));
         </div>
         <div class="row-fluid">
             <div class="span6 ">
+                <div class="control-group <?=!empty($form->model->errors['app_name']) ? 'error' : '';?>">
+                    <label class="control-label" for="<?=$form->elements['app_name']->id;?>"><?=$form->elements['app_name']->label;?></label>
+                    <div class="controls">
+                        <input <?=$do=='view' ? 'readonly' : ''; ?> type="text" id="<?=$form->elements['app_name']->id;?>" name="projects[<?=$form->elements['app_name']->name;?>]" value="<?=$form->model->attributes['app_name'];?>" class="m-wrap span12">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row-fluid">
+            <div class="span6 ">
                 <div class="control-group <?=!empty($form->model->errors['prefix']) ? 'error' : '';?>">
                     <label class="control-label" for="<?=$form->elements['prefix']->id;?>"><?=$form->elements['prefix']->label;?></label>
                     <div class="controls">

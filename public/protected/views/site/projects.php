@@ -40,7 +40,7 @@
                                         <tr>
                                             <td class="highlight">
                                                 <div class="<?=$project->created == 1 ? 'success' : 'important';?>"></div>
-                                                <a href="/projects/edit/<?=$project->id;?>"><?=$project->project_url;?></a>
+                                                <a href="http://<?=$project->project_url;?>"><?=$project->project_url;?></a>
                                             </td>
                                             <td class="hidden-phone"><?=$project->appClub->display_name;?></td>
                                             <td class="hidden-phone"><?=$project->prefix;?></td>

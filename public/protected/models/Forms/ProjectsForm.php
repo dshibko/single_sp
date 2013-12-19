@@ -4,6 +4,7 @@
 class ProjectsForm extends CFormModel
 {
 	public $project_url;
+    public $app_name;
 	public $custom_styles;
 	public $prefix;
     public $favicon;
@@ -21,7 +22,7 @@ class ProjectsForm extends CFormModel
 	public function rules()
 	{
 		return array(
-			array('project_url, prefix, app_club, facebook_app_id, facebook_app_secret, favicon', 'required'),
+			array('project_url, app_name, prefix, app_club, facebook_app_id, facebook_app_secret, favicon', 'required'),
             array('custom_styles', 'type', 'type'=>'string'),
             array('prefix, project_url', 'length', 'min'=>3),
 		);
@@ -36,6 +37,7 @@ class ProjectsForm extends CFormModel
 	{
 		return array(
 			'project_url'               => 'URL of a new site',
+            'app_name'                  => 'Application name',
             'app_club'                  => 'Site home club',
             'prefix'                    => 'Database prefix',
             'favicon'                   => 'Favicon',
@@ -55,6 +57,12 @@ class ProjectsForm extends CFormModel
                     'id'=>'project_url',
                     'maxlength'=>32,
                     'minlength'=>10,
+                ),
+                'app_name'=>array(
+                    'type'=>'text',
+                    'id'=>'app_name',
+                    'maxlength'=>127,
+                    'minlength'=>5,
                 ),
                 'prefix'=>array(
                     'type'=>'text',
