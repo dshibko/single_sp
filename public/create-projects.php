@@ -71,6 +71,11 @@ if (!empty($projects)) {
 
         system("cp ".$sourcePath."public/img/* ".$sourcePath."public/img/".$project['prefix']);
         system("mkdir ".$sourcePath."public/img/".$project['prefix']."/avatar");
+        system("mkdir ".$sourcePath."public/img/".$project['prefix']."/avatar/big");
+        system("mkdir ".$sourcePath."public/img/".$project['prefix']."/avatar/medium");
+        system("mkdir ".$sourcePath."public/img/".$project['prefix']."/avatar/original");
+        system("mkdir ".$sourcePath."public/img/".$project['prefix']."/avatar/small");
+        system("mkdir ".$sourcePath."public/img/".$project['prefix']."/avatar/tiny");
         system("mkdir ".$sourcePath."public/img/".$project['prefix']."/award");
         system("mkdir ".$sourcePath."public/img/".$project['prefix']."/club");
         system("cp -r ".$sourcePath."public/img/club ".$sourcePath."public/img/".$project['prefix']."/club");
@@ -85,6 +90,27 @@ if (!empty($projects)) {
         system("mkdir ".$sourcePath."public/img/".$project['prefix']."/prizes");
         system("mkdir ".$sourcePath."public/img/".$project['prefix']."/report");
         system("cp -r ".$sourcePath."public/img/themes ".$sourcePath."public/img/".$project['prefix']."/themes");
+
+        system("cp ".$sourcePath."public/img/avatar/big/user_default_1.jpg ".$sourcePath."public/img/".$project['prefix']."/avatar/big/user_default_1.jpg");
+        system("cp ".$sourcePath."public/img/avatar/big/user_default_2.jpg ".$sourcePath."public/img/".$project['prefix']."/avatar/big/user_default_2.jpg");
+        system("cp ".$sourcePath."public/img/avatar/big/user_default_3.jpg ".$sourcePath."public/img/".$project['prefix']."/avatar/big/user_default_3.jpg");
+        system("cp ".$sourcePath."public/img/avatar/big/user_default_4.jpg ".$sourcePath."public/img/".$project['prefix']."/avatar/big/user_default_4.jpg");
+        system("cp ".$sourcePath."public/img/avatar/medium/user_default_1.jpg ".$sourcePath."public/img/".$project['prefix']."/avatar/medium/user_default_1.jpg");
+        system("cp ".$sourcePath."public/img/avatar/medium/user_default_2.jpg ".$sourcePath."public/img/".$project['prefix']."/avatar/medium/user_default_2.jpg");
+        system("cp ".$sourcePath."public/img/avatar/medium/user_default_3.jpg ".$sourcePath."public/img/".$project['prefix']."/avatar/medium/user_default_3.jpg");
+        system("cp ".$sourcePath."public/img/avatar/medium/user_default_4.jpg ".$sourcePath."public/img/".$project['prefix']."/avatar/medium/user_default_4.jpg");
+        system("cp ".$sourcePath."public/img/avatar/small/user_default_1.jpg ".$sourcePath."public/img/".$project['prefix']."/avatar/small/user_default_1.jpg");
+        system("cp ".$sourcePath."public/img/avatar/small/user_default_2.jpg ".$sourcePath."public/img/".$project['prefix']."/avatar/small/user_default_2.jpg");
+        system("cp ".$sourcePath."public/img/avatar/small/user_default_3.jpg ".$sourcePath."public/img/".$project['prefix']."/avatar/small/user_default_3.jpg");
+        system("cp ".$sourcePath."public/img/avatar/small/user_default_4.jpg ".$sourcePath."public/img/".$project['prefix']."/avatar/small/user_default_4.jpg");
+        system("cp ".$sourcePath."public/img/avatar/original/user_default_1.jpg ".$sourcePath."public/img/".$project['prefix']."/avatar/original/user_default_1.jpg");
+        system("cp ".$sourcePath."public/img/avatar/original/user_default_2.jpg ".$sourcePath."public/img/".$project['prefix']."/avatar/original/user_default_2.jpg");
+        system("cp ".$sourcePath."public/img/avatar/original/user_default_3.jpg ".$sourcePath."public/img/".$project['prefix']."/avatar/original/user_default_3.jpg");
+        system("cp ".$sourcePath."public/img/avatar/original/user_default_4.jpg ".$sourcePath."public/img/".$project['prefix']."/avatar/original/user_default_4.jpg");
+        system("cp ".$sourcePath."public/img/avatar/tiny/user_default_1.jpg ".$sourcePath."public/img/".$project['prefix']."/avatar/tiny/user_default_1.jpg");
+        system("cp ".$sourcePath."public/img/avatar/tiny/user_default_2.jpg ".$sourcePath."public/img/".$project['prefix']."/avatar/tiny/user_default_2.jpg");
+        system("cp ".$sourcePath."public/img/avatar/tiny/user_default_3.jpg ".$sourcePath."public/img/".$project['prefix']."/avatar/tiny/user_default_3.jpg");
+        system("cp ".$sourcePath."public/img/avatar/tiny/user_default_4.jpg ".$sourcePath."public/img/".$project['prefix']."/avatar/tiny/user_default_4.jpg");
 
         system("chmod -R 777 ".$sourcePath."public/img/".$project['prefix']);
 
