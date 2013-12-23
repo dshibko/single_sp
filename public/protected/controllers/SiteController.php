@@ -63,7 +63,7 @@ class SiteController extends Controller
                     $name = $_FILES['projects']['name']['favicon'];
                     $nameArr = explode('.', $name);
                     if (!in_array($nameArr[count($nameArr) - 1], $projectsForm->allowedFaviconTypes)) {
-                        $projectsForm->addError('favicon', 'asd');
+                        $projectsForm->addError('favicon', 'Upload error');
                     } else {
                         $imagePath = Yii::app()->basePath.'/../assets/fav'.$post['prefix'].'.png';
                         move_uploaded_file($_FILES['projects']['tmp_name']['favicon'], $imagePath);
@@ -71,7 +71,7 @@ class SiteController extends Controller
                         $image->resize(30, 30);
                         $image->save();
                         rename($imagePath, str_replace('.png', '.ico', $imagePath));
-                        $project->favicon = $post['prefix'].'-fav.png';
+                        $project->favicon = 'fav'.$post['prefix'].'.ico';
                     }
                 }
                 if ($project->save()) {

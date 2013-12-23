@@ -3,7 +3,7 @@ return array(
         'edition' => 'club',
         'club_short_name' => '{#short_name#}',
         'opta_id' => '{#app_club#}',
-        'opta_dir_path' => '/home/dmitryshibko/public_html/sp.hiqo-solutions.loc/data/feeds',
+        'opta_dir_path' => '/var/virtualhosts/sp/clone/data/feeds',
         'clear_app_cache_url' => 'http://{#project_url#}/clear-app-cache/',
         'clear_app_cache_allowed_ips' => array('127.0.0.1')
     ),
@@ -12,9 +12,9 @@ return array(
             'orm_default' => array(
                 'driverClass' => 'Doctrine\DBAL\Driver\PDOMySql\Driver',
                 'params' => array(
-                    'host' => 'localhost',
-                    'user' => 'root',
-                    'password' => '123',
+                    'host' => '10.14.43.7',
+                    'user' => 'spadmin',
+                    'password' => 'd&%7PC6/g938j=4TKeW=',
                     'dbname' => '{#project_db#}',
                     'driverOptions' => array(1002=>'SET NAMES utf8'),
                 )

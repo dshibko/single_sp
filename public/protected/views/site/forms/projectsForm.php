@@ -41,7 +41,7 @@ echo CHtml::beginForm('', 'post', array('enctype'=>'multipart/form-data'));
                         <? if (empty($form->model->attributes['favicon'])) : ?>
                             <input <?=$do=='view' ? 'readonly' : ''; ?> type="file" id="<?=$form->elements['favicon']->id;?>" name="projects[<?=$form->elements['favicon']->name;?>]" class="m-wrap span12">
                         <? else : ?>
-                            <img src="/assets/<?=$form->model->attributes['prefix'];?>-fav.png" />
+                            <img src="/assets/<?=$form->model->attributes['favicon'];?>" />
                         <? endif; ?>
                     </div>
                 </div>

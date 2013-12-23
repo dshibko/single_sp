@@ -4,7 +4,7 @@ $db = "scorepredictor";
 
 $source_db="tpl_sp";
 
-mysql_connect("localhost","root","123");
+mysql_connect("10.14.43.7","spadmin","d&%7PC6/g938j=4TKeW=");
 mysql_select_db($db);
 
 $result=mysql_query("SELECT * FROM `projects` INNER JOIN `team` ON `app_club` = `team`.id WHERE `created` = 0");
@@ -27,12 +27,12 @@ if (!empty($projects)) {
 
     foreach ($projects as $project) {
         $new_db = $project['prefix']."_scorepredictor";
-        //mysql_query("CREATE DATABASE IF NOT EXISTS `".$new_db."`");
+        mysql_query("CREATE DATABASE IF NOT EXISTS `".$new_db."`");
 
         mysql_select_db($new_db);
         foreach ($table_names as $table) {
-            //mysql_query("CREATE TABLE `".$table."` LIKE `$source_db`.`".$table."`");
-            //mysql_query("INSERT INTO `".$table."` SELECT * FROM `$source_db`.`".$table."`");
+            mysql_query("CREATE TABLE `".$table."` LIKE `$source_db`.`".$table."`");
+            mysql_query("INSERT INTO `".$table."` SELECT * FROM `$source_db`.`".$table."`");
         }
 
         $config = file_get_contents('config_template.txt');
@@ -57,11 +57,11 @@ if (!empty($projects)) {
 
         mysql_select_db($db);
 
-        $sourcePath = '/home/dmitryshibko/public_html/sp.hiqo-solutions.loc/';
-        $cron = '10 10 * * * cd /var/virtualhosts/sp/chelsea/; php public/index.php opta F1 '.$project['project_url'].PHP_EOL.
-                '0 0,12 * * * cd /var/virtualhosts/sp/chelsea/; php public/index.php opta F40 '.$project['project_url'].PHP_EOL.
-                '*/5 * * * * cd /var/virtualhosts/sp/chelsea/; php public/index.php opta F7 '.$project['project_url'].PHP_EOL.
-                '0 10 * * * cd /var/virtualhosts/sp/chelsea/; php public/index.php opta F2 '.$project['project_url'].PHP_EOL;
+        $sourcePath = '/var/virtualhosts/sp/clone/';
+        $cron = '10 10 * * * cd /var/virtualhosts/sp/clone/; php public/index.php opta F1 '.$project['project_url'].PHP_EOL.
+                '0 0,12 * * * cd /var/virtualhosts/sp/clone/; php public/index.php opta F40 '.$project['project_url'].PHP_EOL.
+                '*/5 * * * * cd /var/virtualhosts/sp/clone/; php public/index.php opta F7 '.$project['project_url'].PHP_EOL.
+                '0 10 * * * cd /var/virtualhosts/sp/clone/; php public/index.php opta F2 '.$project['project_url'].PHP_EOL;
 
         file_put_contents('assets/crontab', $cron, FILE_APPEND);
 
