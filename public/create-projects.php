@@ -7,7 +7,7 @@ $source_db="tpl_sp";
 mysql_connect("10.14.43.7","spadmin","d&%7PC6/g938j=4TKeW=");
 mysql_select_db($db);
 
-$result=mysql_query("SELECT * FROM `projects` INNER JOIN `team` ON `app_club` = `team`.id WHERE `created` = 0");
+$result=mysql_query("SELECT * FROM `projects` INNER JOIN `team` ON `app_club` = `team`.id WHERE `created` = 0 LIMIT 5");
 
 $optaFeedsArray = array('F1', 'F2', 'F7', 'F40');
 
@@ -15,6 +15,7 @@ $projects=array();
 while($row=mysql_fetch_array($result)){
     $projects[]=$row;
 }
+
 if (!empty($projects)) {
     mysql_select_db($source_db);
 
@@ -113,10 +114,11 @@ if (!empty($projects)) {
         system("cp ".$sourcePath."public/img/avatar/tiny/user_default_4.jpg ".$sourcePath."public/img/".$project['prefix']."/avatar/tiny/user_default_4.jpg");
 
         system("chmod -R 777 ".$sourcePath."public/img/".$project['prefix']);
+	system("chmod -R 777 ".$sourcePath."module/Application/language/".$project['prefix']);	
 
         system("bash copy_files.sh");
 
-        mysql_query("UPDATE `projects` SET `created` = 1 WHERE `id` = ".$project['id']);
+        mysql_query("UPDATE `projects` SET `created` = 1 WHERE `id` = ".$project[0]);
     }
 }
 

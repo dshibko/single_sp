@@ -1,6 +1,6 @@
 <html lang="en"><!--<![endif]--><!-- BEGIN HEAD --><head>
     <meta charset="utf-8">
-    <title>Metronic Admin Dashboard Template</title>
+    <title>Scorepredictor Admin Login</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="description">
     <meta content="" name="author">
@@ -37,10 +37,14 @@
         ),
     )); ?>
         <h3 class="form-title">Login to your account</h3>
-        <div class="alert alert-error hide">
-            <button class="close" data-dismiss="alert"></button>
-            <span>Enter any username and passowrd.</span>
-        </div>
+        <?php if(!empty($errors)) : ?>
+            <?php foreach($errors as $err) : ?>
+                <div class="alert alert-error">
+                    <button class="close" data-dismiss="alert"></button>
+                    <span><?=$err;?></span>
+                </div>
+            <?php endforeach; ?>
+        <?php endif;?>
         <div class="control-group">
             <label class="control-label visible-ie8 visible-ie9" >Email</label>
             <div class="controls" style="height: 30px;">

@@ -29,10 +29,26 @@ return array(
             )
         ),
     ),
+    'service_manager' => array(
+        'factories' => array(
+            'translator' => 'Zend\I18n\Translator\TranslatorServiceFactory',
+            'navigation' => 'Zend\Navigation\Service\DefaultNavigationFactory',
+        ),
+    ),
+    'translator' => array(
+        'locale' => 'en_EN',
+        'translation_file_patterns' => array(
+            array(
+                'type'     => 'gettext',
+                'base_dir' => __DIR__ . '/../../module/Application/language/{#prefix#}/',
+                'pattern'  => '%s.mo',
+            ),
+        ),
+    ),
     'club_name' => '{#club_name#}',
     'app_name' => '{#app_name#}',
     'app_prefix' => '{#prefix#}',
-    'favicon_path' => '/img/fav-{#prefix#}.ico',
+    'favicon_path' => '/img/fav{#prefix#}.ico',
     'facebook_api_key' => '{#facebook_app_id#}',
     'facebook_secret_key' => '{#facebook_app_secret#}',
     'facebook_canvas_app_url' => '{#facebook_canvas_app_url#}',

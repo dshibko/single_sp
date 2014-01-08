@@ -38,10 +38,14 @@ echo CHtml::beginForm('', 'post', array('enctype'=>'multipart/form-data'));
                 <div class="control-group <?=!empty($form->model->errors['favicon']) ? 'error' : '';?>">
                     <label class="control-label" for="<?=$form->elements['favicon']->id;?>"><?=$form->elements['favicon']->label;?></label>
                     <div class="controls">
-                        <? if (empty($form->model->attributes['favicon'])) : ?>
-                            <input <?=$do=='view' ? 'readonly' : ''; ?> type="file" id="<?=$form->elements['favicon']->id;?>" name="projects[<?=$form->elements['favicon']->name;?>]" class="m-wrap span12">
+                        <? if ($do != 'view') : ?>
+                            <input type="file" id="<?=$form->elements['favicon']->id;?>" name="projects[<?=$form->elements['favicon']->name;?>]" class="m-wrap span12">
                         <? else : ?>
-                            <img src="/assets/<?=$form->model->attributes['favicon'];?>" />
+                            <? if (!empty($form->model->attributes['favicon'])) : ?>
+				<img src="<?=$form->model->attributes['favicon'];?>" />
+			    <? else : ?>
+				None
+			    <? endif; ?>				
                         <? endif; ?>
                     </div>
                 </div>

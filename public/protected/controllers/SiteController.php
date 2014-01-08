@@ -71,7 +71,7 @@ class SiteController extends Controller
                         $image->resize(30, 30);
                         $image->save();
                         rename($imagePath, str_replace('.png', '.ico', $imagePath));
-                        $project->favicon = Yii::app()->basePath.'/../assets/fav'.$post['prefix'].'.ico';
+			$project->favicon = '/assets/fav'.$post['prefix'].'.ico';
                     }
                 }
                 if ($project->save()) {
@@ -180,14 +180,22 @@ class SiteController extends Controller
 		$model = new LoginForm;
 
 		$post = Yii::app()->request->getPost('LoginForm');
+        $formErrors = array();
 		if(!empty($post))
 		{
 			$model->attributes = $post;
-			if($model->validate() && $model->login())
+			if($model->validate() && $model->login()) {
 				$this->redirect(Yii::app()->user->returnUrl);
+            } else {
+                foreach ($model->getErrors() as $key=>$error) {
+                    foreach ($error as $err) {
+                        $formErrors[] = $err;
+                    }
+                }
+            }
 		}
 
-		$this->renderPartial('login',array('model'=>$model));
+		$this->renderPartial('login',array('model'=>$model, 'errors'=>$formErrors));
 	}
 
 	/**
