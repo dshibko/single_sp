@@ -11,6 +11,13 @@
                     <input <?=$do=='view' ? 'readonly' : ''; ?> type="text" id="<?=$form->elements['display_name']->id;?>" name="user[<?=$form->elements['display_name']->name;?>]" value="<?=$form->model->attributes['display_name'];?>" class="m-wrap span12">
                 </div>
             </div>
+            <?php if (!empty($form->model->errors['display_name'])) : ?>
+                <ul class="error">
+                    <?php foreach($form->model->errors['display_name'] as $error) : ?>
+                        <li style="color: red"><?=$error?></li>
+                    <?php endforeach; ?>
+                </ul>
+            <?php endif; ?>
         </div>
     </div>
     <div class="row-fluid">
@@ -21,6 +28,13 @@
                     <input <?=$do=='view' ? 'readonly' : ''; ?> type="text" id="<?=$form->elements['email']->id;?>" name="user[<?=$form->elements['email']->name;?>]" value="<?=$form->model->attributes['email'];?>" class="m-wrap span12">
                 </div>
             </div>
+            <?php if (!empty($form->model->errors['email'])) : ?>
+                <ul class="error">
+                    <?php foreach($form->model->errors['email'] as $error) : ?>
+                        <li style="color: red"><?=$error?></li>
+                    <?php endforeach; ?>
+                </ul>
+            <?php endif; ?>
         </div>
     </div>
         <div class="row-fluid" style="display: <?=!empty($edit) ? 'none' : 'block'; ?>">
@@ -31,6 +45,13 @@
                         <input <?=$do=='view' ? 'readonly' : ''; ?> type="text" id="<?=$form->elements['password']->id;?>" name="user[<?=$form->elements['password']->name;?>]" value="<?=$form->model->attributes['password'];?>" class="m-wrap span12">
                     </div>
                 </div>
+                <?php if (!empty($form->model->errors['password'])) : ?>
+                    <ul class="error">
+                        <?php foreach($form->model->errors['password'] as $error) : ?>
+                            <li style="color: red"><?=$error?></li>
+                        <?php endforeach; ?>
+                    </ul>
+                <?php endif; ?>
             </div>
         </div>
     <div class="row-fluid">
@@ -46,6 +67,13 @@
                     </select>
                 </div>
             </div>
+            <?php if (!empty($form->model->errors['role_id'])) : ?>
+                <ul class="error">
+                    <?php foreach($form->model->errors['role_id'] as $error) : ?>
+                        <li style="color: red"><?=$error?></li>
+                    <?php endforeach; ?>
+                </ul>
+            <?php endif; ?>
         </div>
     </div>
 </fieldset>

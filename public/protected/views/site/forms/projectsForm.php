@@ -10,6 +10,13 @@ echo CHtml::beginForm('', 'post', array('enctype'=>'multipart/form-data'));
                     <div class="controls">
                         <input <?=$do=='view' ? 'readonly' : ''; ?> type="text" id="<?=$form->elements['project_url']->id;?>" name="projects[<?=$form->elements['project_url']->name;?>]" value="<?=$form->model->attributes['project_url'];?>" class="m-wrap span12">
                     </div>
+                    <?php if (!empty($form->model->errors['project_url'])) : ?>
+                        <ul class="error">
+                            <?php foreach($form->model->errors['project_url'] as $error) : ?>
+                                <li style="color: red"><?=$error?></li>
+                            <?php endforeach; ?>
+                        </ul>
+                    <?php endif; ?>
                 </div>
             </div>
         </div>
@@ -20,6 +27,13 @@ echo CHtml::beginForm('', 'post', array('enctype'=>'multipart/form-data'));
                     <div class="controls">
                         <input <?=$do=='view' ? 'readonly' : ''; ?> type="text" id="<?=$form->elements['app_name']->id;?>" name="projects[<?=$form->elements['app_name']->name;?>]" value="<?=$form->model->attributes['app_name'];?>" class="m-wrap span12">
                     </div>
+                    <?php if (!empty($form->model->errors['app_name'])) : ?>
+                        <ul class="error">
+                            <?php foreach($form->model->errors['app_name'] as $error) : ?>
+                                <li style="color: red"><?=$error?></li>
+                            <?php endforeach; ?>
+                        </ul>
+                    <?php endif; ?>
                 </div>
             </div>
         </div>
@@ -31,6 +45,13 @@ echo CHtml::beginForm('', 'post', array('enctype'=>'multipart/form-data'));
                         <input <?=$do=='view' ? 'readonly' : ''; ?> type="text" id="<?=$form->elements['prefix']->id;?>" name="projects[<?=$form->elements['prefix']->name;?>]" value="<?=$form->model->attributes['prefix'];?>" class="m-wrap span12">
                     </div>
                 </div>
+                <?php if (!empty($form->model->errors['prefix'])) : ?>
+                    <ul class="error">
+                        <?php foreach($form->model->errors['prefix'] as $error) : ?>
+                            <li style="color: red"><?=$error?></li>
+                        <?php endforeach; ?>
+                    </ul>
+                <?php endif; ?>
             </div>
         </div>
         <div class="row-fluid">
@@ -49,6 +70,13 @@ echo CHtml::beginForm('', 'post', array('enctype'=>'multipart/form-data'));
                         <? endif; ?>
                     </div>
                 </div>
+                <?php if (!empty($form->model->errors['favicon'])) : ?>
+                    <ul class="error">
+                        <?php foreach($form->model->errors['favicon'] as $error) : ?>
+                            <li style="color: red"><?=$error?></li>
+                        <?php endforeach; ?>
+                    </ul>
+                <?php endif; ?>
             </div>
         </div>
         <div class="row-fluid">
@@ -64,6 +92,13 @@ echo CHtml::beginForm('', 'post', array('enctype'=>'multipart/form-data'));
                         </select>
                     </div>
                 </div>
+                <?php if (!empty($form->model->errors['app_club'])) : ?>
+                    <ul class="error">
+                        <?php foreach($form->model->errors['app_club'] as $error) : ?>
+                            <li style="color: red"><?=$error?></li>
+                        <?php endforeach; ?>
+                    </ul>
+                <?php endif; ?>
             </div>
         </div>
         <div class="row-fluid">
@@ -74,6 +109,13 @@ echo CHtml::beginForm('', 'post', array('enctype'=>'multipart/form-data'));
                         <input <?=$do=='view' ? 'readonly' : ''; ?> type="text" id="<?=$form->elements['facebook_app_id']->id;?>" name="projects[<?=$form->elements['facebook_app_id']->name;?>]" value="<?=$form->model->attributes['facebook_app_id'];?>" class="m-wrap span12">
                     </div>
                 </div>
+                <?php if (!empty($form->model->errors['facebook_app_id'])) : ?>
+                    <ul class="error">
+                        <?php foreach($form->model->errors['facebook_app_id'] as $error) : ?>
+                            <li style="color: red"><?=$error?></li>
+                        <?php endforeach; ?>
+                    </ul>
+                <?php endif; ?>
             </div>
         </div>
         <div class="row-fluid">
@@ -84,6 +126,13 @@ echo CHtml::beginForm('', 'post', array('enctype'=>'multipart/form-data'));
                         <input <?=$do=='view' ? 'readonly' : ''; ?> type="text" id="<?=$form->elements['facebook_app_secret']->id;?>" name="projects[<?=$form->elements['facebook_app_secret']->name;?>]" value="<?=$form->model->attributes['facebook_app_secret'];?>" class="m-wrap span12">
                     </div>
                 </div>
+                <?php if (!empty($form->model->errors['facebook_app_secret'])) : ?>
+                    <ul class="error">
+                        <?php foreach($form->model->errors['facebook_app_secret'] as $error) : ?>
+                            <li style="color: red"><?=$error?></li>
+                        <?php endforeach; ?>
+                    </ul>
+                <?php endif; ?>
             </div>
         </div>
         <div class="row-fluid">
@@ -94,6 +143,13 @@ echo CHtml::beginForm('', 'post', array('enctype'=>'multipart/form-data'));
                         <input <?=$do=='view' ? 'readonly' : ''; ?> type="text" id="<?=$form->elements['facebook_canvas_app_url']->id;?>" name="projects[<?=$form->elements['facebook_canvas_app_url']->name;?>]" value="<?=$form->model->attributes['facebook_canvas_app_url'];?>" class="m-wrap span12">
                     </div>
                 </div>
+                <?php if (!empty($form->model->errors['facebook_canvas_app_url'])) : ?>
+                    <ul class="error">
+                        <?php foreach($form->model->errors['facebook_canvas_app_url'] as $error) : ?>
+                            <li style="color: red"><?=$error?></li>
+                        <?php endforeach; ?>
+                    </ul>
+                <?php endif; ?>
             </div>
         </div>
         <div class="control-group <?=!empty($form->model->errors['custom_styles']) ? 'error' : '';?>">
@@ -102,6 +158,13 @@ echo CHtml::beginForm('', 'post', array('enctype'=>'multipart/form-data'));
                 <textarea <?=$do=='view' ? 'readonly' : ''; ?> class="large m-wrap" rows="10" name="projects[<?=$form->elements['custom_styles']->name;?>]"><?=$form->model->attributes['custom_styles'];?></textarea>
             </div>
         </div>
+        <?php if (!empty($form->model->errors['custom_styles'])) : ?>
+            <ul class="error">
+                <?php foreach($form->model->errors['custom_styles'] as $error) : ?>
+                    <li style="color: red"><?=$error?></li>
+                <?php endforeach; ?>
+            </ul>
+        <?php endif; ?>
     </fieldset>
     <div class="form-actions">
         <? if ($do != 'view') : ?><button type="submit" name="<?=$form->buttons['save']->name;?>" class="btn blue"><i class="icon-ok"></i> Save</button><? endif; ?>

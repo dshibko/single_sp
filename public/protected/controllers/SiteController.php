@@ -71,11 +71,15 @@ class SiteController extends Controller
                         $image->resize(30, 30);
                         $image->save();
                         rename($imagePath, str_replace('.png', '.ico', $imagePath));
-			$project->favicon = '/assets/fav'.$post['prefix'].'.ico';
+			            $project->favicon = '/assets/fav'.$post['prefix'].'.ico';
                     }
                 }
                 if ($project->save()) {
                     return $this->redirect('/projects');
+                } else {
+                    foreach ($project->getErrors() as $field=>$errors) {
+                        $projectsForm->addError($field, implode('<br>', $errors));
+                    }
                 }
             }
         } else {
@@ -104,6 +108,9 @@ class SiteController extends Controller
                 case 'add':
                 case 'edit':
                 case 'view':
+                    if (Yii::app()->user->__get('role') == User::ROLE_ADMIN && $do == 'add') {
+                        return $this->redirect('/users');
+                    }
                     $post = Yii::app()->request->getPost('user');
                     $form = $this->editUser($id, $post, $do);
                     return $this->render('usersEdit', array('form' => $form, 'edit' => $id, 'do' => $do));
@@ -126,8 +133,12 @@ class SiteController extends Controller
                 $user = !empty($id) ? $userModel->findByPk($id) : $userModel;
                 $post['password'] = !empty($id) ? $post['password'] : crypt($post['password']);
                 $user->attributes = $post;
-                if ($user->save(false)) {
-                    return $this->redirect('/users');
+                if ($user->save()) {
+                    return $this->redirect('/projects');
+                } else {
+                    foreach ($user->getErrors() as $field=>$errors) {
+                        $usersForm->addError($field, implode('<br>', $errors));
+                    }
                 }
             }
         } else {
@@ -140,27 +151,7 @@ class SiteController extends Controller
 
         return $form;
     }
-/*
-    public function actionOpta()
-    {
-        $feedsFrequency = array('F1' => 86400, 'F40' => 43200, 'F7' => 300, 'F2' => 86400);
-        $sourcePath = Yii::app()->params['sp_source_path'];
 
-        $projects = Projects::model()->findAllByAttributes(array('created' => 1));
-
-        foreach ($projects as $project) {
-            $projectOpta = Opta::model()->findAllByAttributes(array('project_id' => $project->id));
-            foreach ($projectOpta as $feed) {
-                if ($feed->last_sync <= time() - $feedsFrequency[$feed->feed_type]) {
-                    print_r(exec('cd '.$sourcePath.'; php public/index.php opta '.$feed->feed_type.' '.$project['project_url']));
-                    $feed->last_sync = time();
-                    $feed->save();
-                }
-            }
-        }
-        print_r($projects);
-    }
-*/
 	/**
 	 * This is the action to handle external exceptions.
 	 */
@@ -177,6 +168,10 @@ class SiteController extends Controller
 
 	public function actionLogin()
 	{
+        if (!Yii::app()->user->getIsGuest()) {
+            return $this->redirect(Yii::app()->homeUrl);
+        }
+
 		$model = new LoginForm;
 
 		$post = Yii::app()->request->getPost('LoginForm');
@@ -185,6 +180,9 @@ class SiteController extends Controller
 		{
 			$model->attributes = $post;
 			if($model->validate() && $model->login()) {
+                $user = User::model()->findByPk(Yii::app()->user->getId());
+                Yii::app()->user->__set('role', $user->role_id);
+
 				$this->redirect(Yii::app()->user->returnUrl);
             } else {
                 foreach ($model->getErrors() as $key=>$error) {

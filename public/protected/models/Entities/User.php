@@ -12,6 +12,10 @@
  */
 class User extends CActiveRecord
 {
+
+    const ROLE_SUPER_ADMIN = 1;
+    const ROLE_ADMIN = 2;
+
 	/**
 	 * @return string the associated database table name
 	 */
@@ -31,7 +35,7 @@ class User extends CActiveRecord
 			array('email, password, display_name, role_id', 'required'),
 			array('role_id', 'numerical', 'integerOnly'=>true),
 			array('email', 'length', 'max'=>50),
-			array('password', 'length', 'max'=>100),
+			array('password', 'length', 'max'=>255),
 			array('display_name', 'length', 'max'=>30),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.

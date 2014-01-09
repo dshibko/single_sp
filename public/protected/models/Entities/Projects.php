@@ -39,6 +39,7 @@ class Projects extends CActiveRecord
 			array('app_club, created, facebook_app_id', 'numerical', 'integerOnly'=>true),
 			array('project_url, facebook_app_secret, facebook_canvas_app_url', 'length', 'max'=>255),
 			array('prefix', 'length', 'max'=>16),
+            array('project_url','unique', 'message'=>'URL of a new site must be unique.'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
 			array('id, project_url, app_name, custom_styles, prefix, app_club, created, facebook_app_id, facebook_app_secret, facebook_canvas_app_url, favicon', 'safe', 'on'=>'search'),

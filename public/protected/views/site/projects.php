@@ -18,7 +18,7 @@
                         <div class="portlet-body">
                             <div class="clearfix">
                                 <div class="actions">
-                                    <? if (Yii::app()->user->role == 1) : ?><a href="/projects/add/" class="btn green"><i class="icon-plus"></i> Add New</a><? endif; ?>
+                                    <a href="/projects/add/" class="btn green"><i class="icon-plus"></i> Add New</a>
                                 </div>
                             </div>
                             <table class="table table-striped table-bordered table-advance table-hover">
