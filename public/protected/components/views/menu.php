@@ -1,4 +1,4 @@
-<ul>
+<ul style="width: 131px;">
     <? foreach($items as $item) : ?>
         <li class="<?=$item['active'] == 1 ? 'active' : '';?>">
             <a href="<?=$item['url'][0]?>">

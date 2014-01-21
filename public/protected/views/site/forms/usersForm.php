@@ -42,7 +42,7 @@
                 <div class="control-group <?=!empty($form->model->errors['password']) ? 'error' : '';?>">
                     <label class="control-label" for="<?=$form->elements['password']->id;?>"><?=$form->elements['password']->label;?></label>
                     <div class="controls">
-                        <input <?=$do=='view' ? 'readonly' : ''; ?> type="text" id="<?=$form->elements['password']->id;?>" name="user[<?=$form->elements['password']->name;?>]" value="<?=$form->model->attributes['password'];?>" class="m-wrap span12">
+                        <input <?=$do=='view' ? 'readonly' : ''; ?> type="text" id="<?=$form->elements['password']->id;?>" name="user[<?=$form->elements['password']->name;?>]" value="" class="m-wrap span12">
                     </div>
                 </div>
                 <?php if (!empty($form->model->errors['password'])) : ?>
@@ -54,6 +54,23 @@
                 <?php endif; ?>
             </div>
         </div>
+    <div class="row-fluid" style="display: <?=!empty($edit) ? 'none' : 'block'; ?>">
+        <div class="span6 ">
+            <div class="control-group <?=!empty($form->model->errors['repassword']) ? 'error' : '';?>">
+                <label class="control-label" for="<?=$form->elements['repassword']->id;?>"><?=$form->elements['repassword']->label;?></label>
+                <div class="controls">
+                    <input <?=$do=='view' ? 'readonly' : ''; ?> type="text" id="<?=$form->elements['repassword']->id;?>" name="user[<?=$form->elements['repassword']->name;?>]" value="" class="m-wrap span12">
+                </div>
+            </div>
+            <?php if (!empty($form->model->errors['repassword'])) : ?>
+                <ul class="error">
+                    <?php foreach($form->model->errors['repassword'] as $error) : ?>
+                        <li style="color: red"><?=$error?></li>
+                    <?php endforeach; ?>
+                </ul>
+            <?php endif; ?>
+        </div>
+    </div>
     <div class="row-fluid">
         <div class="span6 ">
             <div class="control-group <?=!empty($form->model->errors['role_id']) ? 'error' : '';?>">

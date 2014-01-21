@@ -29,6 +29,7 @@ class UsersForm extends CFormModel
 			'email'        => 'Email',
             'display_name' => 'Display Name',
             'password'     => 'Password',
+            'repassword'   => 'Retype Password',
             'role_id'      => 'Role',
 		);
 	}
@@ -52,6 +53,12 @@ class UsersForm extends CFormModel
                 'password'=>array(
                     'type'=>'text',
                     'id'=>'password',
+                    'maxlength'=>32,
+                    'minlength'=>6,
+                ),
+                'repassword'=>array(
+                    'type'=>'text',
+                    'id'=>'repassword',
                     'maxlength'=>32,
                     'minlength'=>6,
                 ),

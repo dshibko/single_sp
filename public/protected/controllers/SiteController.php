@@ -115,6 +115,10 @@ class SiteController extends Controller
                     $form = $this->editUser($id, $post, $do);
                     return $this->render('usersEdit', array('form' => $form, 'edit' => $id, 'do' => $do));
                     break;
+                case 'delete':
+                    User::model()->deleteByPk($id);
+                    return $this->redirect('/users');
+                    break;
                 default:
                     return $this->redirect('/users');
                     break;
@@ -131,13 +135,17 @@ class SiteController extends Controller
             $usersForm->attributes = $post;
             if ($usersForm->validate()) {
                 $user = !empty($id) ? $userModel->findByPk($id) : $userModel;
-                $post['password'] = !empty($id) ? $post['password'] : crypt($post['password']);
-                $user->attributes = $post;
-                if ($user->save()) {
-                    return $this->redirect('/projects');
+                if ($post['password'] != $post['repassword']) {
+                    $usersForm->addError('repassword', 'Passwords do not match');
                 } else {
-                    foreach ($user->getErrors() as $field=>$errors) {
-                        $usersForm->addError($field, implode('<br>', $errors));
+                    $post['password'] = !empty($id) ? $post['password'] : crypt($post['password']);
+                    $user->attributes = $post;
+                    if ($user->save()) {
+                        return $this->redirect('/users');
+                    } else {
+                        foreach ($user->getErrors() as $field=>$errors) {
+                            $usersForm->addError($field, implode('<br>', $errors));
+                        }
                     }
                 }
             }

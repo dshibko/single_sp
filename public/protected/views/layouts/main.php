@@ -27,6 +27,7 @@
     <link href="<?php echo Yii::app()->request->baseUrl; ?>/plugins/glyphicons/css/glyphicons.css" rel="stylesheet">
     <link href="<?php echo Yii::app()->request->baseUrl; ?>/plugins/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet" type="text/css" />
     <link href="<?php echo Yii::app()->request->baseUrl; ?>/plugins/fullcalendar/fullcalendar/bootstrap-fullcalendar.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/plugins/data-tables/DT_bootstrap.css">
 
 	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
 </head>
@@ -38,6 +39,7 @@
             array('label'=>'Home', 'url'=>array('/index'), 'class'=>'icon-dashboard'),
             array('label'=>'Projects', 'url'=>array('/projects'), 'class'=>'icon-bolt'),
             array('label'=>'Users', 'url'=>array('/users'), 'class'=>'icon-underline'),
+            array('label'=>'Logout', 'url'=>array('/logout'), 'class'=>'icon-coffee'),
         )));
     $this->endWidget(); ?>
 </div>
@@ -69,9 +71,13 @@
 <script src="<?php echo Yii::app()->request->baseUrl; ?>/plugins/bootstrap-daterangepicker/date.js" type="text/javascript"></script>
 <script src="<?php echo Yii::app()->request->baseUrl; ?>/plugins/bootstrap-daterangepicker/daterangepicker.js" type="text/javascript"></script>
 <script src="<?php echo Yii::app()->request->baseUrl; ?>/plugins/fullcalendar/fullcalendar/fullcalendar.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/plugins/data-tables/jquery.dataTables.js"></script>
+<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/plugins/data-tables/DT_bootstrap.js"></script>
 <!-- END PAGE LEVEL PLUGINS -->
 <!-- BEGIN PAGE LEVEL SCRIPTS -->
+<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/plugins/select2/select2.min.js"></script>
 <script src="<?php echo Yii::app()->request->baseUrl; ?>/scripts/app.js" type="text/javascript"></script>
+<script src="<?php echo Yii::app()->request->baseUrl; ?>/scripts/table-managed.js"></script>
 <script src="<?php echo Yii::app()->request->baseUrl; ?>/scripts/index.js" type="text/javascript"></script>
 <!-- END PAGE LEVEL SCRIPTS -->
 <script>
@@ -83,6 +89,7 @@
         Index.initChat();
         Index.initDashboardDaterange();
         Index.initIntro();
+        TableManaged.init();
     });
 </script>
 <!-- END JAVASCRIPTS -->

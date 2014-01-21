@@ -55,10 +55,17 @@ return array(
             'rules'=>array(
                 '<action:\w+>' => 'site/<action>',
                 '<action:\w+>/<do:(add)>' => 'site/<action>',
-                '<action:\w+>/<do:(edit|view)>/<id:\d+>' => 'site/<action>',
+                '<action:\w+>/<do:(edit|view|delete)>/<id:\d+>' => 'site/<action>',
             ),
         ),
-
+/*
+        'db'=>array(
+            'connectionString' => 'mysql:host=localhost;dbname=scorepredictor',
+            'emulatePrepare' => true,
+            'username' => 'root',
+            'password' => '123',
+            'charset' => 'utf8',
+        ),*/
         'db'=>array(
             'connectionString' => 'mysql:host=10.14.43.7;dbname=scorepredictor',
             'emulatePrepare' => true,
@@ -66,6 +73,7 @@ return array(
             'password' => 'd&%7PC6/g938j=4TKeW=',
             'charset' => 'utf8',
         ),
+
         'errorHandler'=>array(
             // use 'site/error' action to display errors
             'errorAction'=>'site/error',

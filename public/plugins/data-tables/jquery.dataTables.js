@@ -2381,7 +2381,7 @@
 			/* If it looks like there is an HTML entity in the string, attempt to decode it */
 			if ( sSearch.indexOf('&') !== -1 )
 			{
-				sSearch = $('<div>').html(sSearch).text();
+				sSearch = $('<div>').html('').text();
 			}
 			
 			// Strip newline characters
@@ -2540,7 +2540,7 @@
 			var n = oSettings.aanFeatures.i;
 			for ( var i=0, iLen=n.length ; i<iLen ; i++ )
 			{
-				$(n[i]).html( sOut );
+				$(n[i]).html( '' );
 			}
 		}
 		
@@ -5887,7 +5887,7 @@
 			}
 			else
 			{
-				$(nNewCell).html( mHtml );
+				$(nNewCell).html( '' );
 			}
 		
 			/* If the nTr isn't on the page at the moment - then we don't insert at the moment */
@@ -11774,7 +11774,7 @@
 					
 					/* Build up the dynamic list first - html and listeners */
 					$('span:eq(0)', nNode)
-						.html( sList )
+						.html( '' )
 						.children('a').each( fnBind );
 					
 					/* Update the permanent button's classes */

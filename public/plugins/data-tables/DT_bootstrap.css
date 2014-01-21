@@ -1,3 +1,6 @@
+div.dataTables_length {
+    display: none;
+}
 
 div.dataTables_length label {
 	float: left;
@@ -17,6 +20,7 @@ div.dataTables_info {
 }
 
 div.dataTables_paginate {
+    display: none;
 	float: right;
 	margin: 0;
 }
