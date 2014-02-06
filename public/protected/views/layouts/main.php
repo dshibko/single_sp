@@ -33,6 +33,18 @@
 </head>
 
 <body>
+<div class="header navbar navbar-inverse navbar-fixed-top">
+            <!-- BEGIN TOP NAVIGATION BAR -->
+            <div class="navbar-inner">
+                <div class="container-fluid">
+                    <a href="javascript:;" class="btn-navbar collapsed" data-toggle="collapse" data-target=".nav-collapse">
+                        <img src="/img/sidebar-toggler.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <!-- END TOP NAVIGATION BAR -->
+        </div>
+<div class="page-container row-fluid">
 <div class="page-sidebar nav-collapse collapse">
     <? $this->beginWidget('Menu',array(
         'items'=>array(
@@ -48,7 +60,7 @@
 	<?php echo $content; ?>
 
 </div><!-- page -->
-
+</div>
 <!-- BEGIN JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
 <!-- BEGIN CORE PLUGINS -->
 <script src="<?php echo Yii::app()->request->baseUrl; ?>/plugins/jquery-1.8.3.min.js" type="text/javascript"></script>

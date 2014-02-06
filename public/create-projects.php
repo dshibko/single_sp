@@ -68,7 +68,8 @@ if (!empty($projects)) {
 
         system("mkdir ".$sourcePath."module/Application/language/".$project['prefix']);
         system("cp ".$sourcePath."module/Application/language/en_EN.po ".$sourcePath."module/Application/language/".$project['prefix']."/en_EN.po");
-        system("mkdir ".$sourcePath."public/img/".$project['prefix']);
+        system("cp ".$sourcePath."module/Application/language/en_EN.mo ".$sourcePath."module/Application/language/".$project['prefix']."/en_EN.mo");
+	system("mkdir ".$sourcePath."public/img/".$project['prefix']);
 
         system("cp ".$sourcePath."public/img/* ".$sourcePath."public/img/".$project['prefix']);
         system("mkdir ".$sourcePath."public/img/".$project['prefix']."/avatar");
@@ -117,6 +118,10 @@ if (!empty($projects)) {
 	system("chmod -R 777 ".$sourcePath."module/Application/language/".$project['prefix']);	
 
         system("bash copy_files.sh");
+
+	system('rm assets/'.$project['project_url'].'.local.php');
+        system('rm assets/'.$project['prefix'].'-styles.css');
+        system('rm assets/fav'.$project['prefix'].'.ico');
 
         mysql_query("UPDATE `projects` SET `created` = 1 WHERE `id` = ".$project[0]);
     }
