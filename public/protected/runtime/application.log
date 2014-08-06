@@ -9216,3 +9216,30 @@ Stack trace:
 #5 {main}
 REQUEST_URI=/create_projects
 ---
+2014/03/03 19:31:20 [error] [exception.CException] exception 'CException' with message 'CHttpRequest is unable to determine the request URI.' in /var/virtualhosts/sp/admin/framework/web/CHttpRequest.php:519
+Stack trace:
+#0 /var/virtualhosts/sp/admin/framework/web/CHttpRequest.php(431): CHttpRequest->getRequestUri()
+#1 /var/virtualhosts/sp/admin/framework/web/CUrlManager.php(364): CHttpRequest->getPathInfo()
+#2 /var/virtualhosts/sp/admin/framework/web/CWebApplication.php(140): CUrlManager->parseUrl(Object(CHttpRequest))
+#3 /var/virtualhosts/sp/admin/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/virtualhosts/sp/admin/public/index.php(13): CApplication->run()
+#5 {main}
+---
+2014/03/03 19:31:35 [error] [exception.CException] exception 'CException' with message 'CHttpRequest is unable to determine the request URI.' in /var/virtualhosts/sp/admin/framework/web/CHttpRequest.php:519
+Stack trace:
+#0 /var/virtualhosts/sp/admin/framework/web/CHttpRequest.php(431): CHttpRequest->getRequestUri()
+#1 /var/virtualhosts/sp/admin/framework/web/CUrlManager.php(364): CHttpRequest->getPathInfo()
+#2 /var/virtualhosts/sp/admin/framework/web/CWebApplication.php(140): CUrlManager->parseUrl(Object(CHttpRequest))
+#3 /var/virtualhosts/sp/admin/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/virtualhosts/sp/admin/public/index.php(13): CApplication->run()
+#5 {main}
+---
+2014/03/03 19:32:01 [error] [exception.CException] exception 'CException' with message 'CHttpRequest is unable to determine the request URI.' in /var/virtualhosts/sp/admin/framework/web/CHttpRequest.php:519
+Stack trace:
+#0 /var/virtualhosts/sp/admin/framework/web/CHttpRequest.php(431): CHttpRequest->getRequestUri()
+#1 /var/virtualhosts/sp/admin/framework/web/CUrlManager.php(364): CHttpRequest->getPathInfo()
+#2 /var/virtualhosts/sp/admin/framework/web/CWebApplication.php(140): CUrlManager->parseUrl(Object(CHttpRequest))
+#3 /var/virtualhosts/sp/admin/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/virtualhosts/sp/admin/public/index.php(13): CApplication->run()
+#5 {main}
+---

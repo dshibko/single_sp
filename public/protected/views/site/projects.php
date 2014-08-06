@@ -49,7 +49,7 @@
                                         <td class="hidden-phone"><?=$project->facebook_app_id;?></td>
                                         <td class="hidden-phone"><?=$project->facebook_app_secret;?></td>
                                         <td class="hidden-phone"><?=$project->facebook_canvas_app_url;?></td>
-                                        <td><a href="/projects/view/<?=$project->id;?>" class="btn mini blue-stripe">View</a></td>
+                                        <td><a href="/projects/view/<?=$project->id;?>" class="btn mini blue-stripe ">View</a><a onclick="return confirm('Are you sure? All data will be lost! Please contact the hosting provider to remove the vhost setting for <?=$project->project_url;?>');" href="/projects/delete/<?=$project->id;?>" class="btn mini red">Delete</a></td>
                                     </tr>
                                 <? endforeach; ?>
                             <? endif; ?>

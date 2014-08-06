@@ -31,6 +31,15 @@ class SiteController extends Controller
                 return $this->redirect('/projects');
             }
             switch ($do) {
+		case 'delete':
+		    if (!empty($id)) {
+			$projectsModel = new Projects();
+			$project = $projectsModel->findByPk($id);
+			$project->delete();
+			return $this->redirect('/projects');
+		    }
+		    return $this->redirect('/projects');
+		    break;
                 case 'add':
                 case 'view':
                     $post = Yii::app()->request->getPost('projects');
